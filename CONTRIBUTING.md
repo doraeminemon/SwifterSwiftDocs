@@ -14,10 +14,10 @@ This document contains information and guidelines about contributing to the docu
 
 
 ## Important Notes Before Contributing
-- All documentations should be written in Markdown, if you are not familiar with markdown please refer to [this great cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) by [Adam Pritchard](https://github.com/adam-p) 
+- All documentations should be written in Markdown and in a clear English, if you are not familiar with markdown please refer to [this great cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) by [Adam Pritchard](https://github.com/adam-p) 
 - Documentations are grouped in one file based on the Type they extend (e.g. All String extensions documentations are grouped in **StringExtensions.md** file)  
 - All doc files are added to the [Docs folder](https://github.com/SwifterSwift/SwifterSwiftDocs/tree/master/Docs)
-- The origianl documentations for any extension (e.g. ) is the main source, incase it has any mistake, please open a pull request to update it before adding documentations here.
+- The first source for any extension is the original documentations found in the [Extensions directory](https://github.com/SwifterSwift/SwifterSwift/tree/stable/Source/Extensions) in [SwifterSwift repository](https://github.com/SwifterSwift/SwifterSwift), incase they have any mistake, please open a pull request to update it before adding documentations here.
 
 
 ## Extension Types
@@ -42,8 +42,11 @@ This document contains information and guidelines about contributing to the docu
 
 
 ## Documentation Template
-Please refer to [this template]() before adding new documentations
+Please refer to [this template](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Templates/ExtensionsTemplate.md) before adding new documentations with keeping in mind the following:
 
+- The order of added documentations should be the same of their original places in the [SwifterSwift repository](https://github.com/SwifterSwift/SwifterSwift).
+- Do not forget to add a **`.`** at the end of lines.
+- Do not forget to add in-page link in the **Table of Contents** table for each extension to its line in the documentation file.
 
 ## Releases Flow
 Changes are made to [master](https://github.com/SwifterSwift/SwifterSwiftDocs/tree/master) branch directly and merged into [stable](https://github.com/SwifterSwift/SwifterSwiftDocs/tree/stable) branch for every stable release.

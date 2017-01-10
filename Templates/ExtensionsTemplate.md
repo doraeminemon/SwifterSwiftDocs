@@ -1,50 +1,104 @@
-# Documentations Contributing Guidelines
+## String Extensions
 
-This document contains information and guidelines about contributing to the documentations of this project. Please read it before you start participating.
+### Table of Contents
+| Name | Type |
+|:--- | :--- |
+| [**`base64Decoded`**](#base64decoded) | Read-Only Property |
+| [**`base64Encoded`**](#base64encoded) | Read-Only Property |
+| [**`camelCased`**](#camelcased) | Read-Only Property |
+| [**`containEmoji`**](#containemoji) | Read-Only Property |
+| [**`contain(string, caseSensitive)`**](#contain_-string-string-casesensitive-bool--true) | Method | 8+ | 9+ | NA | NA|
+| [**`replacing(substring, with newString)`**](#replacing_-substring-string-with-newstring-string) | Method | 8+ | 9+ | NA | NA|
 
+--
 
-## Topics
-- [Important Notes Before Adding Documentations](#importantnotesbeforeaddingdocumentations)
-- [Extension Types](#extensiontypes)
-- [Documentation Template](#documentationtemplate)
-- [Releases Flow](#releasesflow)
-- [Reporting Issues](#reportingissues)
+### `base64Decoded`
+String decoded from base64 (read-Only, if applicable).
+ - **type**: Read-Only Property
+ - **return type**: String?
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
 
+Example
+```swift
+"SGVsbG8gV29ybGQh".base64Decoded = Optional("Hello World!")
+```
 
+--
 
+### `base64Encoded`
+String encoded in base64 (read-Only, if applicable).
+ - **type**: Read-Only Property
+ - **return type**: String?
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
 
-## Important Notes Before Contributing
-- All documentations should be written in Markdown, if you are not familiar with markdown please refer to [this great cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) by [Adam Pritchard](https://github.com/adam-p) 
-- Documentations are grouped in one file based on the Type they extend (e.g. All String extensions documentations are grouped in **StringExtensions.md** file)  
-- All doc files are added to the [Docs folder](https://github.com/SwifterSwift/SwifterSwiftDocs/tree/master/Docs)
-- The origianl documentations for any extension (e.g. ) is the main source, incase it has any mistake, please open a pull request to update it before adding documentations here.
+Example
+```swift
+"Hello World!".base64Encoded -> Optional("SGVsbG8gV29ybGQh")
+```
 
+--
 
-## Extension Types
+### `camelCased`
+CamelCase of string.
+ - **type**: Read-Only Property
+ - **return type**: String
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
 
-### Enumerations
-- Enumeration `enum`
+Example
+```swift
+"Some variable nAme".camelCased -> "someVariableName"
+```
 
-### Properties
-- Property `var`
-- Read-Only Property `var`
-- Static Property `static var`
-- Static Read-Only Property `static var`
+--
 
-### Methods
-- Method `func`
-- Mutating Method `mutating func`
-- Static Method `static func` `class func`
+### `containEmoji`
+Check if string contains one or more emojis.
+ - **type**: Read-Only Property
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
 
-### Initializers
-- Initializer `init`
-- Optional Initializer `init?`
+Example
+```swift
+"string👨‍with😍emojis✊🏿".containEmoji -> true
+```
 
+--
 
-## Documentation Template
+### `contain(_ string: String, caseSensitive: Bool = true)`
+Check if string contains one or more instance of substring.
 
+ - **type**: Method
+ - **return type**: Bool
+ - **parameters**:
+   - **string**: substring to search for.
+   - **caseSensitive**: set true for case sensitive search (default is true).
+ - **returns**: true if string contains one or more instance of substring.
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
 
-## Releases Flow
+Example
+```swift
+"Hello World!".contain("o", caseSensitive: false) -> true
+```
 
+--
 
-## Reporting Issues
+### `replacing(_ substring: String, with newString: String)`
+String by replacing part of string with another string.
+ - **type**: Method
+ - **return type**: String
+ - **parameters**:
+   - **substring**: old substring to find and replace
+   - **newString**: new string to insert in old string place
+ - **returns**: string after replacing substring with newString
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+```swift
+"%number% items".replacing("%number%", with "10") -> "10 items"
+```
