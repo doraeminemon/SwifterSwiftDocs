@@ -14,7 +14,7 @@
 --
 
 ## `base64Decoded`
-String decoded from base64 (read-Only, if applicable).
+String decoded from base64  (if applicable).
 
  - **type**: Read-Only Property
  - **return type**: String?
@@ -30,7 +30,7 @@ Example
 --
 
 ## `base64Encoded`
-String encoded in base64 (read-Only, if applicable).
+String encoded in base64 (if applicable).
 
  - **type**: Read-Only Property
  - **return type**: String?
@@ -56,7 +56,7 @@ CamelCase of string.
 Example
 
 ```swift
-"Some variable nAme".camelCased -> "someVariableName"
+"Hello test".camelCased -> "helloTest"
 ```
 
 --
@@ -72,27 +72,343 @@ Check if string contains one or more emojis.
 Example
 
 ```swift
-"string👨‍with😍emojis✊🏿".containEmoji -> true
+"Hello 😂".containEmoji -> true
 ```
 
 --
 
-## `contain(_ string: String, caseSensitive: Bool = true)`
-Check if string contains one or more instance of substring.
+## `firstCharacter`
+First character of string (if applicable).
 
- - **type**: Method
- - **return type**: Bool
- - **parameters**:
-   - `string`: substring to search for.
-   - `caseSensitive`: set true for case sensitive search (default is true).
- - **returns**: true if string contains one or more instance of substring.
+ - **type**: Read-Only Property
+ - **return type**: String?
  - **availability**: `iOS 8+` `tvOS 9+`
  - **unit tests**: `iOS`
 
 Example
 
 ```swift
-"Hello World!".contain("o", caseSensitive: false) -> true
+"Hello".firstCharacter -> Optional("H")
+```
+
+--
+
+## `hasLetters`
+Check if string contains one or more letters.
+
+ - **type**: Read-Only Property
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"123".hasLetters -> true
+```
+
+--
+
+## `hasNumbers`
+Check if string contains one or more numbers.
+
+ - **type**: Read-Only Property
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"123".hasNumbers -> true
+```
+
+--
+
+## `isAlphabetic`
+Check if string contains only letters.
+
+ - **type**: Read-Only Property
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"abc".isAlphabetic -> true
+```
+
+--
+
+## `isAlphaNumeric`
+Check if string contains at least one letter and one number.
+
+ - **type**: Read-Only Property
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"123abc".isAlphaNumeric -> true
+```
+
+--
+
+## `isEmail`
+Check if string is valid email format.
+
+ - **type**: Read-Only Property
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"ios@emirhanerdogan.com".isEmail -> true
+```
+
+--
+
+## `isHttpsUrl`
+Check if string is https URL.
+
+ - **type**: Read-Only Property
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"https://google.com".isHttpsUrl -> true
+```
+
+--
+
+## `isHttpUrl`
+Check if string is http URL.
+
+ - **type**: Read-Only Property
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"http://google.com".isHttpUrl -> true
+```
+
+--
+
+## `isNumeric`
+Check if string contains only numbers.
+
+ - **type**: Read-Only Property
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"123".isNumeric -> true
+```
+
+--
+
+## `lastCharacter`
+Last character of string (if applicable).
+
+ - **type**: Read-Only Property
+ - **return type**: String?
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"Hello".lastCharacter -> Optional("o")
+```
+
+--
+
+## `latinized`
+Latinized string.
+
+ - **type**: Read-Only Property
+ - **return type**: String
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"Hëllô Teśt".latinized -> "Hello Test"
+```
+
+--
+
+## `lines`
+Array of strings separated by new lines.
+
+ - **type**: Read-Only Property
+ - **return type**: [String]
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"Hello\ntest".lines -> ["Hello", "test"]
+```
+
+--
+
+## `mostCommonCharacter`
+The most common character in string.
+
+ - **type**: Read-Only Property
+ - **return type**: String
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"This is a test, since e is appearing every where e should be the common character".lines -> "e"
+```
+
+--
+
+## `reversed`
+Reversed string.
+
+ - **type**: Read-Only Property
+ - **return type**: String
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"Swift".lines -> "tfiwS"
+```
+
+--
+
+## `bool`
+Bool value from string (if applicable).
+
+ - **type**: Read-Only Property
+ - **return type**: Bool?
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"1". bool -> true
+```
+
+--
+
+## `date`
+Date object from "yyyy-MM-dd" formatted string
+
+ - **type**: Read-Only Property
+ - **return type**: Date?
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"2007-06-29".date -> Date?
+```
+
+--
+
+## `dateTime`
+Date object from "yyyy-MM-dd HH:mm:ss" formatted string.
+
+ - **type**: Read-Only Property
+ - **return type**: Date?
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"2007-06-29 14:23:09".dateTime -> Date?
+```
+
+--
+
+## `double`
+Double value from string (if applicable).
+
+ - **type**: Read-Only Property
+ - **return type**: Double?
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"20".double -> 20.0
+```
+
+--
+
+## `float`
+Float value from string (if applicable).
+
+ - **type**: Read-Only Property
+ - **return type**: Float?
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"21".double -> 21.0
+```
+
+--
+
+## `float32`
+Float32 value from string (if applicable).
+
+ - **type**: Read-Only Property
+ - **return type**: Float32?
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"21.86".double -> 21.86
+```
+
+--
+
+## `float64`
+Float64 value from string (if applicable).
+
+ - **type**: Read-Only Property
+ - **return type**: Float64?
+ - **availability**: `iOS 8+` `tvOS 9+`
+ - **unit tests**: `iOS`
+
+Example
+
+```swift
+"23.45".double -> 23.45
 ```
 
 --
