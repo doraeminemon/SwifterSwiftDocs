@@ -36,7 +36,7 @@
 ## `base64Decoded`
 String decoded from base64  (if applicable).
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: String?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -52,7 +52,7 @@ Example
 ## `base64Encoded`
 String encoded in base64 (if applicable).
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: String?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -68,7 +68,7 @@ Example
 ## `camelCased`
 CamelCase of string.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: String
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -84,7 +84,7 @@ Example
 ## `containEmoji`
 Check if string contains one or more emojis.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Bool
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -100,7 +100,7 @@ Example
 ## `firstCharacter`
 First character of string (if applicable).
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: String?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -116,7 +116,7 @@ Example
 ## `hasLetters`
 Check if string contains one or more letters.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Bool
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -132,7 +132,7 @@ Example
 ## `hasNumbers`
 Check if string contains one or more numbers.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Bool
  - **availability**: `iOS 8+` `tvOS 9+`
  - **unit tests**: `iOS`
@@ -148,7 +148,7 @@ Example
 ## `isAlphabetic`
 Check if string contains only letters.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Bool
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -164,7 +164,7 @@ Example
 ## `isAlphaNumeric`
 Check if string contains at least one letter and one number.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Bool
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -180,7 +180,7 @@ Example
 ## `isEmail`
 Check if string is valid email format.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Bool
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -196,7 +196,7 @@ Example
 ## `isHttpsUrl`
 Check if string is https URL.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Bool
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -212,7 +212,7 @@ Example
 ## `isHttpUrl`
 Check if string is http URL.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Bool
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -228,7 +228,7 @@ Example
 ## `isNumeric`
 Check if string contains only numbers.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Bool
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -244,7 +244,7 @@ Example
 ## `lastCharacter`
 Last character of string (if applicable).
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: String?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -260,7 +260,7 @@ Example
 ## `latinized`
 Latinized string.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: String
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -292,7 +292,7 @@ Example
 ## `mostCommonCharacter`
 The most common character in string.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: String
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -308,7 +308,7 @@ Example
 ## `reversed`
 Reversed string.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: String
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -324,7 +324,7 @@ Example
 ## `bool`
 Bool value from string (if applicable).
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Bool?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -340,7 +340,7 @@ Example
 ## `date`
 Date object from "yyyy-MM-dd" formatted string
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Date?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -356,7 +356,7 @@ Example
 ## `dateTime`
 Date object from "yyyy-MM-dd HH:mm:ss" formatted string.
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Date?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -372,7 +372,7 @@ Example
 ## `double`
 Double value from string (if applicable).
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Double?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -388,7 +388,7 @@ Example
 ## `float`
 Float value from string (if applicable).
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Float?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -404,7 +404,7 @@ Example
 ## `float32`
 Float32 value from string (if applicable).
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Float32?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -420,7 +420,7 @@ Example
 ## `float64`
 Float64 value from string (if applicable).
 
- - **type**: Read-Only Property
+ - **type**: Read-Only Property.
  - **return type**: Float64?
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
  - **unit tests**: `iOS`
@@ -436,7 +436,7 @@ Example
 ## `replacing(_ substring: String, with newString: String)`
 String by replacing part of string with another string.
 
- - **type**: Method
+ - **type**: Method.
  - **return type**: String
  - **parameters**:
    - `substring`: old substring to find and replace
