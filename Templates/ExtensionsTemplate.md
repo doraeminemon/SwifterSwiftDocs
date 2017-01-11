@@ -1,23 +1,24 @@
 ## String Extensions
 
 ### Table of Contents
-| Name | Type |
-|:--- | :--- |
-| [**`base64Decoded`**](#base64decoded) | Read-Only Property |
-| [**`base64Encoded`**](#base64encoded) | Read-Only Property |
-| [**`camelCased`**](#camelcased) | Read-Only Property |
-| [**`containEmoji`**](#containemoji) | Read-Only Property |
-| [**`contain(string, caseSensitive)`**](#contain_-string-string-casesensitive-bool--true) | Method | 8+ | 9+ | NA | NA|
-| [**`replacing(substring, with newString)`**](#replacing_-substring-string-with-newstring-string) | Method | 8+ | 9+ | NA | NA|
+| Name | Type | iOS | tvOS | watchOS | macOS |
+|:--- | :--- | :---: | :---: | :---: | :---: |
+| [**`base64Decoded`**](#base64decoded) | Read-Only Property | 8+ | 9+ | 3+ | NA|
+| [**`base64Encoded`**](#base64encoded) | Read-Only Property | 8+ | 9+ | 3+ | NA|
+| [**`camelCased`**](#camelcased) | Read-Only Property | 8+ | 9+ | 3+ | NA|
+| [**`containEmoji`**](#containemoji) | Read-Only Property | 8+ | 9+ | 3+ | NA|
+| [**`contain(string, caseSensitive)`**](#contain_-string-string-casesensitive-bool--true) | Method | 8+ | 9+ | 3+ | NA|
+| [**`replacing(substring, with newString)`**](#replacing_-substring-string-with-newstring-string) | Method | 8+ | 9+ | 3+ | NA|
 
 --
 
 ### `base64Decoded`
 String decoded from base64 (read-Only, if applicable).
- - **type**: Read-Only Property
+
+ - **type**: Read-Only Property.
  - **return type**: String?
- - **availability**: `iOS 8+` `tvOS 9+`
- - **unit tests**: `iOS`
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`.
+ - **unit tests**: `iOS`.
 
 Example
 ```swift
@@ -28,10 +29,11 @@ Example
 
 ### `base64Encoded`
 String encoded in base64 (read-Only, if applicable).
- - **type**: Read-Only Property
+
+ - **type**: Read-Only Property.
  - **return type**: String?
- - **availability**: `iOS 8+` `tvOS 9+`
- - **unit tests**: `iOS`
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`.
+ - **unit tests**: `iOS`.
 
 Example
 ```swift
@@ -42,10 +44,11 @@ Example
 
 ### `camelCased`
 CamelCase of string.
- - **type**: Read-Only Property
+
+ - **type**: Read-Only Property.
  - **return type**: String
- - **availability**: `iOS 8+` `tvOS 9+`
- - **unit tests**: `iOS`
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`.
+ - **unit tests**: `iOS`.
 
 Example
 ```swift
@@ -56,10 +59,11 @@ Example
 
 ### `containEmoji`
 Check if string contains one or more emojis.
- - **type**: Read-Only Property
+
+ - **type**: Read-Only Property.
  - **return type**: Bool
- - **availability**: `iOS 8+` `tvOS 9+`
- - **unit tests**: `iOS`
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`.
+ - **unit tests**: `iOS`.
 
 Example
 ```swift
@@ -71,14 +75,14 @@ Example
 ### `contain(_ string: String, caseSensitive: Bool = true)`
 Check if string contains one or more instance of substring.
 
- - **type**: Method
+ - **type**: Method.
  - **return type**: Bool
  - **parameters**:
    - **string**: substring to search for.
    - **caseSensitive**: set true for case sensitive search (default is true).
  - **returns**: true if string contains one or more instance of substring.
- - **availability**: `iOS 8+` `tvOS 9+`
- - **unit tests**: `iOS`
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`.
+ - **unit tests**: `iOS`.
 
 Example
 ```swift
@@ -89,14 +93,15 @@ Example
 
 ### `replacing(_ substring: String, with newString: String)`
 String by replacing part of string with another string.
- - **type**: Method
+
+ - **type**: Method.
  - **return type**: String
  - **parameters**:
-   - **substring**: old substring to find and replace
-   - **newString**: new string to insert in old string place
- - **returns**: string after replacing substring with newString
- - **availability**: `iOS 8+` `tvOS 9+`
- - **unit tests**: `iOS`
+   - **substring**: old substring to find and replace.
+   - **newString**: new string to insert in old string place.
+ - **returns**: string after replacing substring with newString.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`.
+ - **unit tests**: `iOS`.
 
 Example
 ```swift

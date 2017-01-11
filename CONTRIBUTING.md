@@ -14,11 +14,12 @@ This document contains information and guidelines about contributing to the docu
 
 
 ## Important Notes Before Contributing
-- All documentations should be written in Markdown and in a clear English, if you are not familiar with markdown please refer to [this great cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) by [Adam Pritchard](https://github.com/adam-p) 
-- Documentations are grouped in one file based on the Type they extend (e.g. All String extensions documentations are grouped in **StringExtensions.md** file)  
-- All doc files are added to the [Docs folder](https://github.com/SwifterSwift/SwifterSwiftDocs/tree/master/Docs)
+- All documentations should be written in Markdown and in a clear English, if you are not familiar with markdown please refer to [this great cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) by [Adam Pritchard](https://github.com/adam-p).
+- Documentations are grouped in one file based on the Type they extend (e.g. All String extensions documentations are grouped in **StringExtensions.md** file).
+- All doc files are added to the [Docs folder](https://github.com/SwifterSwift/SwifterSwiftDocs/tree/master/Docs).
 - The first source for any extension is the original documentations found in the [Extensions directory](https://github.com/SwifterSwift/SwifterSwift/tree/stable/Source/Extensions) in [SwifterSwift repository](https://github.com/SwifterSwift/SwifterSwift), incase they have any mistake, please open a pull request to update it before adding documentations here.
-
+- **DO NOT** put any personal data about you in the context, your name, email, website or what so ever. 
+- Even if you are a team member **DO NOT** contribute to the repo directly, instead make a fork to your personal account, and send a pull request.
 
 ## Extension Types
 
