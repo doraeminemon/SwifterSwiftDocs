@@ -300,7 +300,7 @@ The most common character in string.
 Example
 
 ```swift
-"This is a test, since e is appearing everywhere e should be the common character". mostCommonCharacter -> "e"
+"This is a test, since e is appearing everywhere e should be the common character".mostCommonCharacter -> "e"
 ```
 
 --
@@ -332,7 +332,7 @@ Bool value from string (if applicable).
 Example
 
 ```swift
-"1". bool -> true
+"1".bool -> true
 ```
 
 --
