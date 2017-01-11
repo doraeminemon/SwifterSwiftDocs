@@ -41,6 +41,11 @@ This document contains information and guidelines about contributing to the docu
 - Initializer `init`
 - Optional Initializer `init?`
 
+### Operators
+- Prefix Operator
+- Infix Operator
+- Postfix Operator
+
 
 ## Documentation Template
 Please refer to [this template](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Templates/ExtensionsTemplate.md) before adding new documentations with keeping in mind the following:
