@@ -14,7 +14,7 @@
 
 SwifterSwift is for iOS, tvOS and watchOS, however most of the extensions should work on macOS.
 
-### List of All Extensions
+## List of All Extensions
 - [StringExtensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/StringExtensions.md)
 
 
