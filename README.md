@@ -2,18 +2,21 @@
 
 ## Table of Contents
 - [Requirements](#requirements)
+- [List of All Extensions](#list-of-all-extensions)
 - [Installation](#installation)
-- [List of All Extensions](#listofallextensions)
 - [How to contribute to the documentations](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/stable/CONTRIBUTING.md)
 - [How to contribute to the project](https://github.com/SwifterSwift/SwifterSwift/blob/stable/CONTRIBUTING.md)
 
-
 ## Requirements:
-- iOS 8.0+ / tvOS 9.0+
+- iOS 8.0+ / tvOS 9.0+ / watchOS 3.0+
 - Xcode 8.1+
 - Swift 3.0+
 
-SwifterSwift is for both iOS and tvOS, however most of the extensions should work on watchOS, and macOS.
+SwifterSwift is for iOS, tvOS and watchOS, however most of the extensions should work on macOS.
+
+### List of All Extensions
+- [StringExtensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/StringExtensions.md)
+
 
 ## Installation
 
@@ -88,6 +91,3 @@ Note that the [Swift Package Manager](https://swift.org/package-manager) is stil
 ### Manually
 
 Add the [extensions](https://github.com/SwifterSwift/SwifterSwift/tree/stable/Source) folder to your Xcode project to use all extensions, or a specific extension.
-
-
-### List of All Extensions
