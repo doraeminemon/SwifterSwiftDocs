@@ -32,19 +32,20 @@
 | [**`nearestHour`**](#nearesthour) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`timeZone`**](#timezone) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`unixTimestamp`**](#unixtimestamp) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`adding(component: Calendar.Component, value: Int)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`add(component: Calendar.Component, value: Int)`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`beginning(of component: Calendar.Component)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`end(of component: Calendar.Component)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`dateString(ofStyle style: DateFormatter.Style)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`dateTimeString(ofStyle style: DateFormatter.Style)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`isInCurrent(_ component: Calendar.Component)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`timeString(ofStyle style: DateFormatter.Style)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`dayName(ofStyle style: DayNameStyle)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`monthName(ofStyle style: MonthNameStyle)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`init?(calendar: Calendar?, timeZone: TimeZone?, era: Int?, year: Int?, month: Int?, day: Int?, hour: Int?, minute: Int?, second: Int?, nanosecond: Int?)`**]() | Optional Initializer  | 8+ | 9+ | 3+ | 10.10+ |
-| [**`init?(iso8601String: String)`**]() | Optional Initializer  | 8+ | 9+ | 3+ | 10.10+ |
-| [**`init(unixTimestamp: Double)`**]() | Initializer  | 8+ | 9+ | 3+ | 10.10+ |
+| [**`adding(component: Calendar.Component, value: Int)`**](#adding_-component-calendarcomponent-value-int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`add(component: Calendar.Component, value: Int)`**](#add_-component-calendarcomponent-value-int) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`changing(_ component: Calendar.Component, value: Int)`**](#changing_-component-calendarcomponent-value-int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`beginning(of component: Calendar.Component)`**](#beginningof-component-calendarcomponent) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`end(of component: Calendar.Component)`**](#endof-component-calendarcomponent) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`dateString(ofStyle style: DateFormatter.Style)`**](#datestringofstyle-style-dateformatterstyle--medium) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`dateTimeString(ofStyle style: DateFormatter.Style)`**](#datetimestringofstyle-style-dateformatterstyle--medium) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`isInCurrent(_ component: Calendar.Component)`**](#isincurrent_-component-calendarcomponent) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`timeString(ofStyle style: DateFormatter.Style)`**](#timestringofstyle-style-dateformatterstyle--medium) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`dayName(ofStyle style: DayNameStyle)`**](#daynameofstyle-style-daynamestyle--full) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`monthName(ofStyle style: MonthNameStyle)`**](#monthnameofstyle-style-monthnamestyle--full) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`init?(calendar: Calendar?, timeZone: TimeZone?, era: Int?, year: Int?, month: Int?, day: Int?, hour: Int?, minute: Int?, second: Int?, nanosecond: Int?)`**](#initcalendar-calendar--calendarcurrent-timezone-timezone--timezonecurrent-era-int--dateera-year-int--dateyear-month-int--datemonth-day-int--dateday-hour-int--datehour-minute-int--dateminute-second-int--datesecond-nanosecond-int--datenanosecond) | Optional Initializer  | 8+ | 9+ | 3+ | 10.10+ |
+| [**`init?(iso8601String: String)`**](#initiso8601string-string) | Optional Initializer  | 8+ | 9+ | 3+ | 10.10+ |
+| [**`init(unixTimestamp: Double)`**](#initunixtimestamp-double) | Initializer  | 8+ | 9+ | 3+ | 10.10+ |
 
 --
 

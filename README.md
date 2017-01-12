@@ -8,13 +8,14 @@
 - [How to contribute to the project](https://github.com/SwifterSwift/SwifterSwift/blob/stable/CONTRIBUTING.md)
 
 ## Requirements:
-- iOS 8.0+ / tvOS 9.0+ / watchOS 3.0+
+- iOS 8.0+ / tvOS 9.0+ / watchOS 3.0+ / macOS 10.10+
 - Xcode 8.1+
 - Swift 3.0+
 
-SwifterSwift is for iOS, tvOS and watchOS, however most of the extensions should work on macOS.
-
 ## List of All Extensions
+- [BoolExtensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/BoolExtensions.md)
+- [CharacterExtensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/CharacterExtensions.md)
+- [DateExtensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/DateExtensions.md)
 - [StringExtensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/StringExtensions.md)
 
 
