@@ -32,6 +32,19 @@
 | [**`nearestHour`**](#nearesthour) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`timeZone`**](#timezone) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`unixTimestamp`**](#unixtimestamp) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`adding(component: Calendar.Component, value: Int)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`add(component: Calendar.Component, value: Int)`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`beginning(of component: Calendar.Component)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`end(of component: Calendar.Component)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`dateString(ofStyle style: DateFormatter.Style)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`dateTimeString(ofStyle style: DateFormatter.Style)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`isInCurrent(_ component: Calendar.Component)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`timeString(ofStyle style: DateFormatter.Style)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`dayName(ofStyle style: DayNameStyle)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`monthName(ofStyle style: MonthNameStyle)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`init?(calendar: Calendar?, timeZone: TimeZone?, era: Int?, year: Int?, month: Int?, day: Int?, hour: Int?, minute: Int?, second: Int?, nanosecond: Int?)`**]() | Optional Initializer  | 8+ | 9+ | 3+ | 10.10+ |
+| [**`init?(iso8601String: String)`**]() | Optional Initializer  | 8+ | 9+ | 3+ | 10.10+ |
+| [**`init(unixTimestamp: Double)`**]() | Initializer  | 8+ | 9+ | 3+ | 10.10+ |
 
 --
 
@@ -566,3 +579,321 @@ Date().unixTimestamp -> 1484233862.826291
 --
 
 
+## `adding(_ component: Calendar.Component, value: Int)`
+Date by adding multiples of calendar component.
+
+ - **type**: Method.
+ - **return type**: Date
+ - **parameters**:
+   - **component**: component type.
+   - **value**: multiples of components to add.
+ - **returns**: original date + multiples of component added.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+let date = Date() // "Jan 12, 2017, 7:07 PM"
+let date2 = date.adding(.minute, value: -10) // "Jan 12, 2017, 6:57 PM"
+let date3 = date.adding(.day, value: 4) // "Jan 16, 2017, 7:07 PM"
+let date4 = date.adding(.month, value: 2) // "Mar 12, 2017, 7:07 PM"
+let date5 = date.adding(.year, value: 13) // "Jan 12, 2030, 7:07 PM"
+```
+
+
+--
+
+
+## `add(_ component: Calendar.Component, value: Int)`
+Add calendar component to date.
+
+ - **type**: Mutating Method.
+ - **return type**: Date
+ - **parameters**:
+   - **component**: component type.
+   - **value**: multiples of components to add.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+var date = Date() // "Jan 12, 2017, 7:07 PM"
+date.add(.minute, value: -10) // "Jan 12, 2017, 6:57 PM"
+date.add(.day, value: 4) // "Jan 16, 2017, 7:07 PM"
+date.add(.month, value: 2) // "Mar 12, 2017, 7:07 PM"
+date.add(.year, value: 13) // "Jan 12, 2030, 7:07 PM"
+```
+
+
+--
+
+
+## `changing(_ component: Calendar.Component, value: Int)`
+Date by changing value of calendar component.
+
+ - **type**: Method.
+ - **return type**: Date
+ - **parameters**:
+   - **component**: component type.
+   - **value**: multiples of components to add.
+ - **returns**: original date after changing given component to given value.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+let date = Date() // "Jan 12, 2017, 7:07 PM"
+let date2 = date.changing(.minute, value: 10) // "Jan 12, 2017, 6:10 PM"
+let date3 = date.changing(.day, value: 4) // "Jan 4, 2017, 7:07 PM"
+let date4 = date.changing(.month, value: 2) // "Feb 12, 2017, 7:07 PM"
+let date5 = date.changing(.year, value: 2000) // "Jan 12, 2000, 7:07 PM"
+```
+
+
+--
+
+
+## `beginning(of component: Calendar.Component)`
+Data at the beginning of calendar component.
+
+ - **type**: Method.
+ - **return type**: Date?
+ - **parameters**:
+   - **component**: calendar component to get date at the beginning of.
+ - **returns**: date at the beginning of calendar component (if applicable).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+let date = Date() // "Jan 12, 2017, 7:14 PM"
+let date2 = date.beginning(of: .hour) // "Jan 12, 2017, 7:00 PM"
+let date3 = date.beginning(of: .month) // "Jan 1, 2017, 12:00 AM"
+let date4 = date.beginning(of: .year) // "Jan 1, 2017, 12:00 AM"
+```
+
+
+--
+
+
+## `end(of component: Calendar.Component)`
+Date at the end of calendar component.
+
+ - **type**: Method.
+ - **return type**: Date?
+ - **parameters**:
+   - **component**: calendar component to get date at the end of.
+ - **returns**: date at the end of calendar component (if applicable).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+let date = Date() // "Jan 12, 2017, 7:27 PM"
+let date2 = date.end(of: .day) // "Jan 12, 2017, 11:59 PM"
+let date3 = date.end(of: .month) // "Jan 31, 2017, 11:59 PM"
+let date4 = date.end(of: .year) // "Dec 31, 2017, 11:59 PM"
+```
+
+
+--
+
+
+## `dateString(ofStyle style: DateFormatter.Style = .medium)`
+Date string from date.
+
+ - **type**: Method.
+ - **return type**: String
+ - **parameters**:
+   - **style**: DateFormatter style (default is .medium).
+ - **returns**: date string.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+Date().dateString(ofStyle: .short) -> "1/12/17"
+Date().dateString(ofStyle: .medium) -> "Jan 12, 2017"
+Date().dateString(ofStyle: .long) -> "January 12, 2017"
+Date().dateString(ofStyle: .full) -> "Thursday, January 12, 2017"
+```
+
+
+--
+
+
+## `dateTimeString(ofStyle style: DateFormatter.Style = .medium)`
+Date and time string from date.
+
+ - **type**: Method.
+ - **return type**: String
+ - **parameters**:
+   - **style**: DateFormatter style (default is .medium).
+ - **returns**: date and time string.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+Date().dateTimeString(ofStyle: .short) -> "1/12/17, 7:32 PM"
+Date().dateTimeString(ofStyle: .medium) -> "Jan 12, 2017, 7:32:00 PM"
+Date().dateTimeString(ofStyle: .long) -> "January 12, 2017 at 7:32:00 PM GMT+3"
+Date().dateTimeString(ofStyle: .full) -> "Thursday, January 12, 2017 at 7:32:00 PM GMT+03:00"
+```
+
+
+--
+
+
+## `isInCurrent(_ component: Calendar.Component)`
+Check if date is in current given calendar component.
+
+ - **type**: Method.
+ - **return type**: Bool
+ - **parameters**:
+   - **component**: calendar component to check.
+ - **returns**: true if date is in current given calendar component.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+Date().isInCurrent(.day) -> true
+Date().isInCurrent(.year) -> true
+```
+
+
+--
+
+
+## `timeString(ofStyle style: DateFormatter.Style = .medium)`
+Time string from date.
+
+ - **type**: Method.
+ - **return type**: String
+ - **parameters**:
+   - **style**: DateFormatter style (default is .medium).
+ - **returns**: time string.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+Date().timeString(ofStyle: .short) -> "7:37 PM"
+Date().timeString(ofStyle: .medium) -> "7:37:02 PM"
+Date().timeString(ofStyle: .long) -> "7:37:02 PM GMT+3"
+Date().timeString(ofStyle: .full) -> "7:37:02 PM GMT+03:00"
+```
+
+
+--
+
+
+## `dayName(ofStyle style: DayNameStyle = .full)`
+Day name from date.
+
+ - **type**: Method.
+ - **return type**: String
+ - **parameters**:
+   - **style**: style of day name (default is DayNameStyle.full).
+ - **returns**: day name string (example: W, Wed, Wednesday).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+Date().dayName(ofStyle: .oneLetter) -> "T"
+Date().dayName(ofStyle: .threeLetters) -> "Thu"
+Date().dayName(ofStyle: .full) -> "Thursday"
+```
+
+
+--
+
+
+## `monthName(ofStyle style: MonthNameStyle = .full)`
+Month name from date.
+
+ - **type**: Method.
+ - **return type**: String
+ - **parameters**:
+   - **style**: style of month name (default is MonthNameStyle.full).
+ - **returns**: month name string (example: D, Dec, December).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+Date().monthName(ofStyle: .oneLetter) -> "J"
+Date().monthName(ofStyle: .threeLetters) -> "Jan"
+Date().monthName(ofStyle: .full) -> "January"
+```
+
+
+--
+
+
+## `init?(calendar: Calendar? = Calendar.current, timeZone: TimeZone? = TimeZone.current, era: Int? = Date().era, year: Int? = Date().year, month: Int? = Date().month, day: Int? = Date().day, hour: Int? = Date().hour, minute: Int? = Date().minute, second: Int? = Date().second, nanosecond: Int? = Date().nanosecond)`
+Create a new date form calendar components.
+
+ - **type**: Optional Initializer.
+ - **return type**: Date?
+ - **parameters**:
+   - **calendar**: Calendar (default is current).
+   - **timeZone**: TimeZone (default is current).
+   - **era**: Era (default is current era).
+   - **year**: Year (default is current year).
+   - **month**: Month (default is current month).
+   - **day**: Day (default is today).
+   - **hour**: Hour (default is current hour).
+   - **minute**: Minute (default is current minute).
+   - **second**: Second (default is current second).
+   - **nanosecond**: Nanosecond (default is current nanosecond).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+let date = Date(year: 2010, month: 1, day: 12) // "Jan 12, 2010, 7:45 PM"
+```
+
+
+--
+
+
+## `init?(iso8601String: String)`
+Create date object from ISO8601 string.
+
+ - **type**: Optional Initializer.
+ - **return type**: Date?
+ - **parameters**:
+   - **iso8601String**: iso8601String: ISO8601 string of format (yyyy-MM-dd'T'HH:mm:ss.SSSZ).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+let date = Date(iso8601String: "2017-01-12T16:48:00.959Z") // "Jan 12, 2017, 7:48 PM"
+```
+
+
+--
+
+
+## `init(unixTimestamp: Double)`
+Create new date object from UNIX timestamp.
+
+ - **type**: Initializer.
+ - **return type**: Date
+ - **parameters**:
+   - **unixTimestamp**: UNIX timestamp.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+let date = Date(unixTimestamp: 1484239783.922743) // "Jan 12, 2017, 7:49 PM"
+```
+
+
+--
