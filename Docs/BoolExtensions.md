@@ -4,10 +4,10 @@
 ## Table of Contents
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
-| [**`int`**](#int) | Read-Only Property | 8+ | 9+ | 3+ | NA |
-| [**`string`**](#string) | Read-Only Property | 8+ | 9+ | 3+ | NA |
-| [**`toggled`**](#int) | Read-Only Property | 8+ | 9+ | 3+ | NA |
-| [**`toggle()`**](#toggle) | Mutating Method | 8+ | 9+ | 3+ | NA |
+| [**`int`**](#int) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`string`**](#string) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`toggled`**](#int) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`toggle()`**](#toggle()) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 
 --
 
@@ -16,7 +16,7 @@ Return 1 if true, or 0 if false.
 
  - **type**: Read-Only Property.
  - **return type**: Int
- - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 Example
 
@@ -31,7 +31,7 @@ Return "true" if true, or "false" if false.
 
  - **type**: Read-Only Property.
  - **return type**: String
- - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 Example
 
@@ -46,7 +46,7 @@ Return inversed value of bool.
 
  - **type**: Read-Only Property.
  - **return type**: Bool
- - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 Example
 
@@ -62,7 +62,7 @@ Toggle value for bool.
  - **type**: Mutating Method.
  - **return type**: Bool
  - **returns**: inversed value of bool.
- - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 Example
 
