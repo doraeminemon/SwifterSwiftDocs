@@ -38,48 +38,48 @@
 | [**`urlDecoded`**](#urldecoded) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`urlEncoded`**](#urlencoded) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`withoutSpacesAndNewLines`**](#withoutspacesandnewlines) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`subscript(i: Int)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`subscript(range: CountableRange<Int>)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`subscript(range: ClosedRange<Int>)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`copyToPasteboard()`**]() | Method | 8+ | - | - | 10.10+ |
-| [**`camelize()`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`contain(_ string: String, caseSensitive: Bool)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`count(of string: String, caseSensitive: Bool)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`end(with suffix: String, caseSensitive: Bool)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`firstIndex(of string: String)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`latinize()`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`random(ofLength: Int)`**]() | Static Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`replacing(_ substring: String, with newString: String)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`reverse()`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`slicing(from i: Int, length: Int)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`slice(from i: Int, length: Int)`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`slicing(from start: Int, to end: Int)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`slice(from start: Int, to end: Int)`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`slicing(at i: Int)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`slice(at i: Int)`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`splitted(by separator: Character)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`start(with prefix: String, caseSensitive: Bool)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`date(withFormat format: String)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`trim()`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`truncate(toLength: Int, trailing: String?)`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`truncated(toLength: Int, trailing: String?)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`urlDecode()`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`urlEncode()`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`*`**]() | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
-| [**`init?(base64: String)`**]() | Optional Initializer | 8+ | 9+ | 3+ | 10.10+ |
-| [**`bold`**]() | Read-Only Property | 8+ | - | - | 10.10+ |
-| [**`underline`**]() | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`strikethrough`**]() | Read-Only Property | 8+ | - | 3+ | 10.10+ |
-| [**`italic`**]() | Read-Only Property | 8+ | - | - | - |
-| [**`colored(with color: UIColor/NSColor)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`nsString`**]() | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`lastPathComponent`**]() | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`pathExtension`**]() | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`deletingLastPathComponent`**]() | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`deletingPathExtension`**]() | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`pathComponents`**]() | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`appendingPathComponent(_ str: String)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`appendingPathExtension(_ str: String)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`subscript(i: Int)`**](#subscripti-int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`subscript(range: CountableRange<Int>)`**](#subscriptrange-countablerangeint) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`subscript(range: ClosedRange<Int>)`**](#subscriptrange-closedrangeint) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`copyToPasteboard()`**](#copytopasteboard) | Method | 8+ | - | - | 10.10+ |
+| [**`camelize()`**](#camelize) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`contain(_ string: String, caseSensitive: Bool)`**](#contain_-string-string-casesensitive-bool--true) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`count(of string: String, caseSensitive: Bool)`**](#countof-string-string-casesensitive-bool--true) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`end(with suffix: String, caseSensitive: Bool)`**](#endwith-suffix-string-casesensitive-bool--true) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`firstIndex(of string: String)`**](#firstindexof-string-string) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`latinize()`**](#latinize) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`random(ofLength: Int)`**](#randomoflength-int) | Static Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`replacing(_ substring: String, with newString: String)`**](#replacing_-substring-string-with-newstring-string) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`reverse()`**](#reverse) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`slicing(from i: Int, length: Int)`**](#slicingfrom-i-int-length-int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`slice(from i: Int, length: Int)`**](#slicefrom-i-int-length-int) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`slicing(from start: Int, to end: Int)`**](#slicingfrom-start-int-to-end-int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`slice(from start: Int, to end: Int)`**](#slicefrom-start-int-to-end-int) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`slicing(at i: Int)`**](#slicingat-i-int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`slice(at i: Int)`**](#sliceat-i-int) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`splitted(by separator: Character)`**](#splittedby-separator-character) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`start(with prefix: String, caseSensitive: Bool)`**](#startwith-prefix-string-casesensitive-bool--true) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`date(withFormat format: String)`**](#datewithformat-format-string) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`trim()`**](#trim) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`truncate(toLength: Int, trailing: String?)`**](#truncatetolength-int-trailing-string--) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`truncated(toLength: Int, trailing: String?)`**](#truncatedtolength-int-trailing-string--) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`urlDecode()`**](#urldecode) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`urlEncode()`**](#urlencode) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`*`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
+| [**`init?(base64: String)`**](#initbase64-string) | Optional Initializer | 8+ | 9+ | 3+ | 10.10+ |
+| [**`bold`**](#bold) | Read-Only Property | 8+ | - | - | 10.10+ |
+| [**`underline`**](#underline) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`strikethrough`**](#strikethrough) | Read-Only Property | 8+ | - | 3+ | 10.10+ |
+| [**`italic`**](#italic) | Read-Only Property | 8+ | - | - | - |
+| [**`colored(with color: UIColor/NSColor)`**](#coloredwith-color-uicolornscolor) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`nsString`**](##nsstring) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`lastPathComponent`**](#lastpathcomponent) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`pathExtension`**](#pathextension) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`deletingLastPathComponent`**](#deletinglastpathcomponent) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`deletingPathExtension`**](#deletingpathextension) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`pathComponents`**](#pathcomponents) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`appendingPathComponent(_ str: String)`**](#appendingpathcomponent_-str-string) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`appendingPathExtension(_ str: String)`**](#appendingpathextension_-str-string) | Method | 8+ | 9+ | 3+ | 10.10+ |
 
 --
 
@@ -1379,6 +1379,17 @@ NSString pathExtension.
 
 ## `deletingLastPathComponent`
 NSString deletingLastPathComponent.
+
+ - **type**: Read-Only Property.
+ - **return type**: String
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+
+--
+
+
+## `deletingPathExtension`
+NSString deletingPathExtension.
 
  - **type**: Read-Only Property.
  - **return type**: String
