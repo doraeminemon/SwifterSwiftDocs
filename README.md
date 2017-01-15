@@ -26,6 +26,19 @@
 ### [Int Extensions](./IntExtensions.md)
 ### [String Extensions](./StringExtensions.md)
 ### [SwifterSwift](./SwifterSwift.md)
+=======
+### [Bool Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/BoolExtensions.md)
+### [Character Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/CharacterExtensions.md)
+### [Collection Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/CollectionExtensions.md)
+### [Data Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/DataExtensions.md)
+### [Date Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/DateExtensions.md)
+### [Dictionary Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/DictionaryExtensions.md)
+### [Double Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/DoubleExtensions.md)
+### [Float Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/FloatExtensions.md)
+### [Int Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/IntExtensions.md)
+### [String Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/StringExtensions.md)
+### [SwifterSwift](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/SwifterSwift.md)
+>>>>>>> origin/master
 
 ## List of UI Extensions
 ### [CGFloat Extensions](./CGFloatExtensions.md)
