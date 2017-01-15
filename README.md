@@ -14,7 +14,7 @@
 
 ## List of All Extensions
 
-### [Array Extensions](../Docs/ArrayExtensions.md)
+### [Array Extensions](./Docs/ArrayExtensions.md)
 ### [Bool Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/BoolExtensions.md)
 ### [Character Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/CharacterExtensions.md)
 ### [Collection Extensions](https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/Docs/CollectionExtensions.md)
