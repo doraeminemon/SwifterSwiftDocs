@@ -664,7 +664,7 @@ Readable string from a URL string.
 Example
 
 ```swift
-"it's%20easy%20to%20encode%20strings".urlDecoded -> "it's easy to encode strings"
+"it's%20easy%20to%20decode%20strings".urlDecoded -> "it's easy to decode strings"
 ```
 
 
@@ -959,5 +959,468 @@ str.reverse()
 print(str) // prints "!dlroW olleH"
 ```
 
+
+--
+
+
+## `slicing(from i: Int, length: Int)`
+Sliced string from a start index with length.
+
+ - **type**: Method.
+ - **return type**: String?
+ - **parameters**:
+  - **i**: string index the slicing should start from.
+  - **length**: amount of characters to be sliced after given index.
+ - **returns**: sliced substring of length number of characters (if applicable).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+"Hello World".slicing(from: 6, length: 5) -> "World"
+```
+
+
+--
+
+
+## `slice(from i: Int, length: Int)`
+Slice given string from a start index with length (if applicable).
+
+ - **type**: Mutating Method.
+ - **parameters**:
+  - **i**: string index the slicing should start from.
+  - **length**: amount of characters to be sliced after given index.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+var str = "Hello World"
+str.slice(from: 6, length: 5)
+print(str) // prints "World"
+```
+
+
+--
+
+
+## `slicing(from start: Int, to end: Int)`
+Sliced string from a start index to an end index.
+
+ - **type**: Method.
+ - **return type**: String?
+ - **parameters**:
+  - **start**: string index the slicing should start from.
+  - **end**: string index the slicing should end at.
+ - **returns**: sliced substring starting from start index, and ends at end index (if applicable).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+"Hello World".slicing(from: 6, to: 11) -> "World"
+```
+
+
+--
+
+
+## `slice(from start: Int, to end: Int)`
+Slice given string from a start index to an end index (if applicable).
+
+ - **type**: Mutating Method.
+ - **parameters**:
+  - **start**: string index the slicing should start from.
+  - **end**: string index the slicing should end at.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+var str = "Hello World"
+str.slice(from: 6, to: 11)
+print(str) // prints "World"
+```
+
+
+--
+
+
+## `slicing(at i: Int)`
+Sliced string from a start index.
+
+ - **type**: Method.
+ - **return type**: String?
+ - **parameters**:
+  - **i**: string index the slicing should start from.
+ - **returns**: substring starting from start index (if applicable).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+"Hello World".slicing(at: 6) -> "World"
+```
+
+
+--
+
+
+## `slice(at i: Int)`
+Slice given string from a start index (if applicable).
+
+ - **type**: Mutating Method.
+ - **parameters**:
+  - **i**: string index the slicing should start from.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+var str = "Hello World"
+str.slice(at: 6)
+print(str) // prints "World"
+```
+
+
+--
+
+
+## `splitted(by separator: Character)`
+Array of strings separated by given string.
+
+ - **type**: Method.
+ - **return type**: [String]
+ - **parameters**:
+  - **separator**: separator to split string by.
+ - **returns**: array of strings separated by given string.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+"hello World".splited(by: " ") -> ["hello", "World"]
+```
+
+
+--
+
+
+## `start(with prefix: String, caseSensitive: Bool = true)`
+Check if string starts with substring.
+
+ - **type**: Method.
+ - **return type**: Bool
+ - **parameters**:
+  - **suffix**: substring to search if string starts with.
+  - **caseSensitive**: set true for case sensitive search (default is true).
+ - **returns**: true if string starts with substring.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+"hello World".start(with: "h")
+"hello World".start(with: "H", caseSensitive: false)
+```
+
+
+--
+
+
+## `date(withFormat format: String)`
+Date object from string of date format.
+
+ - **type**: Method.
+ - **return type**: Date?
+ - **parameters**:
+  - **format**: date format.
+ - **returns**: Date object from string (if applicable).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+"2017-01-15".date(withFormat: "yyyy-MM-dd") -> Date set to Jan 15, 2017
+"not date string".date(withFormat: "yyyy-MM-dd") -> nil
+```
+
+
+--
+
+
+## `trim()`
+Removes spaces and new lines in beginning and end of string.
+
+ - **type**: Mutating Method.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+var str = "  \n Hello World \n\n\n"
+str.trim()
+print(str) // prints "Hello World"
+```
+
+
+--
+
+
+## `truncate(toLength: Int, trailing: String? = "...")`
+Truncate string (cut it to a given number of characters).
+
+ - **type**: Mutating Method.
+ - **parameters**:
+  - **toLength**: maximum number of characters before cutting.
+  - **trailing**: string to add at the end of truncated string (default is "...").
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+var str = "This is a very long sentence"
+str.truncate(toLength: 14)
+print(str) // prints "This is a very..."
+```
+
+
+--
+
+
+## `truncated(toLength: Int, trailing: String? = "...")`
+Truncated string (limited to a given number of characters).
+
+
+ - **type**: Method.
+ - **return type**: String
+ - **parameters**:
+  - **toLength**: maximum number of characters before cutting.
+  - **trailing**: string to add at the end of truncated string.
+ - **returns**: truncated string.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+"This is a very long sentence".truncated(toLength: 14) -> "This is a very..."
+"Short sentence".truncated(toLength: 14) -> "Short sentence"
+```
+
+
+--
+
+
+## `urlDecode()`
+Convert URL string to readable string.
+
+ - **type**: Mutating Method.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+var str = "it's%20easy%20to%20decode%20strings"
+str.urlDecode()
+print(str) // prints "it's easy to decode strings"
+```
+
+
+--
+
+
+## `urlEncode()`
+Escape string.
+
+ - **type**: Mutating Method.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+var str = "it's easy to encode strings"
+str.urlEncode()
+print(str) // prints "it's%20easy%20to%20encode%20strings"
+```
+
+
+--
+
+
+## `Operator *`
+Repeat string multiple times.
+
+ - **type**: Infix Operator.
+ - **return type**: String
+ - **returns**: new string with given string repeated n times.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+'bla' * 3 -> "blablabla"
+```
+
+
+--
+
+
+## `init?(base64: String)`
+Create a new string from a base64 string (if applicable).
+
+ - **type**: Optional Initializer.
+ - **return type**: String?
+ - **parameters**:
+  - **base64**: base64 string.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+String(base64: "SGVsbG8gV29ybGQh") = "Hello World!"
+String(base64: "hello") = nil
+```
+
+
+--
+
+
+## `bold`
+Bold string.
+
+ - **type**: Read-Only Property.
+ - **return type**: NSAttributedString
+ - **availability**: `iOS 8+` `macOS 10.10+`.
+
+
+--
+
+
+## `underline`
+Underlined string
+
+ - **type**: Read-Only Property.
+ - **return type**: NSAttributedString
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+
+--
+
+
+## `strikethrough`
+Strikethrough string.
+
+ - **type**: Read-Only Property.
+ - **return type**: NSAttributedString
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+
+--
+
+
+## `italic`
+Italic string.
+
+ - **type**: Read-Only Property.
+ - **return type**: NSAttributedString
+ - **availability**: `iOS 8+`.
+
+
+--
+
+
+## `colored(with color: UIColor/NSColor)`
+Add color to string.
+
+ - **type**: Method.
+ - **return type**: NSAttributedString
+ - **parameters**:
+  - **color**: text color (NSColor for mac, and UI color for other operating systems).
+ - **returns**: a NSAttributedString versions of string colored with given color. 
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+
+--
+
+
+## `nsString`
+NSString from a string.
+
+ - **type**: Read-Only Property.
+ - **return type**: NSString
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+
+--
+
+
+## `lastPathComponent`
+NSString lastPathComponent.
+
+ - **type**: Read-Only Property.
+ - **return type**: String
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+
+--
+
+
+## `pathExtension`
+NSString pathExtension.
+
+ - **type**: Read-Only Property.
+ - **return type**: String
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+
+--
+
+
+## `deletingLastPathComponent`
+NSString deletingLastPathComponent.
+
+ - **type**: Read-Only Property.
+ - **return type**: String
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+
+--
+
+
+## `pathComponents`
+NSString pathComponents.
+
+ - **type**: Read-Only Property.
+ - **return type**: [String]
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+
+--
+
+
+## `appendingPathComponent(_ str: String)`
+NSString appendingPathComponent(str: String)
+
+ - **type**: Method.
+ - **return type**: String
+ - **parameters**:
+  - **str**: the path component to append to the receiver.
+ - **returns**: a new string made by appending aString to the receiver, preceded if necessary by a path separator.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+
+--
+
+
+## `appendingPathExtension(_ str: String)`
+NSString appendingPathExtension(str: String).
+
+ - **type**: Method.
+ - **return type**: String
+ - **parameters**:
+  - **str**: The extension to append to the receiver.
+ - **returns**: a new string made by appending to the receiver an extension separator followed by ext (if applicable).
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 --
