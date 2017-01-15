@@ -73,7 +73,7 @@ Example
 
 --
 
-## `*`
+## `Operator *`
 Repeat character multiple times.
 
  - **type**: Infix Operator.
