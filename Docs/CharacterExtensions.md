@@ -8,7 +8,7 @@
 | [**`isNumber`**](#isnumber) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`int`**](#int) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`string`**](#string) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`*`**](#*) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
+| [**`*`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
 --
 
