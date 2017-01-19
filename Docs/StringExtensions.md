@@ -14,8 +14,9 @@
 | [**`isAlphabetic`**](#isalphabetic) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`isAlphaNumeric`**](#isalphanumeric) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`isEmail`**](#isemail) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`isHttpsUrl`**](#ishttpsurl) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`isHttpUrl`**](#ishttpurl) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`isValidUrl`**](#isvalidurl) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`isValidHttpsUrl`**](#isvalidhttpsurl) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`isValidHttpUrl`**](#isvalidhttpurl) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`isNumeric`**](#isnumeric) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`lastCharacter`**](#lastcharacter) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`latinized`**](#latinized) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -259,8 +260,8 @@ Example
 --
 
 
-## `isHttpsUrl`
-Check if string is https URL.
+## `isValidUrl`
+Check if string is a valid URL.
 
  - **type**: Read-Only Property.
  - **return type**: Bool
@@ -269,15 +270,15 @@ Check if string is https URL.
 Example
 
 ```swift
-"https://google.com".isHttpsUrl -> true
+"https://google.com".isValidUrl -> true
 ```
 
 
 --
 
 
-## `isHttpUrl`
-Check if string is http URL.
+## `isValidHttpsUrl`
+Check if string is a valid https URL.
 
  - **type**: Read-Only Property.
  - **return type**: Bool
@@ -286,7 +287,24 @@ Check if string is http URL.
 Example
 
 ```swift
-"http://google.com".isHttpUrl -> true
+"https://google.com".isValidHttpsUrl -> true
+```
+
+
+--
+
+
+## `isValidHttpUrl`
+Check if string is a valid http URL.
+
+ - **type**: Read-Only Property.
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+"http://google.com".isValidHttpUrl -> true
 ```
 
 
