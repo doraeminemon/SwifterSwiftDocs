@@ -14,13 +14,13 @@
 | [**`romanNumeral`**](#romannumeral) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`timeString`**](#timestring) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`kFormatted`**](#kformatted) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`gcd(of n: Int)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`lcm(of n: Int)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`randomBetween(min: Int, max: Int)`**]() | Static Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`**`**]() | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
-| [**`√`**]() | Prefix Operator | 8+ | 9+ | 3+ | 10.10+ |
-| [**`±`**]() | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
-| [**`±`**]() | Prefix Operator | 8+ | 9+ | 3+ | 10.10+ |
+| [**`gcd(of n: Int)`**](#gcdof-n-int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`lcm(of n: Int)`**](#lcmof-n-int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`randomBetween(min: Int, max: Int)`**](#randombetweenmin-int-max-int) | Static Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`**`**](#infix-operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
+| [**`√`**](#prefix-operator-) | Prefix Operator | 8+ | 9+ | 3+ | 10.10+ |
+| [**`±`**](#infix-operator--1) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
+| [**`±`**](#prefix-operator--1) | Prefix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
 
 --
@@ -347,6 +347,3 @@ Example
 ```swift
 ± 2 -> (-2, 2)
 ```
-
-
---
