@@ -181,7 +181,7 @@ Example
 
 ```swift
 "123abc".hasLetters -> true
-"abc".hasLetters -> false
+"123".hasLetters -> false
 ```
 
 
