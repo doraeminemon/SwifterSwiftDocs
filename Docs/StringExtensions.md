@@ -68,11 +68,6 @@
 | [**`urlEncode()`**](#urlencode) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`*`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 | [**`init?(base64: String)`**](#initbase64-string) | Optional Initializer | 8+ | 9+ | 3+ | 10.10+ |
-| [**`bold`**](#bold) | Read-Only Property | 8+ | - | - | 10.10+ |
-| [**`underline`**](#underline) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`strikethrough`**](#strikethrough) | Read-Only Property | 8+ | - | 3+ | 10.10+ |
-| [**`italic`**](#italic) | Read-Only Property | 8+ | - | - | - |
-| [**`colored(with color: UIColor/NSColor)`**](#coloredwith-color-uicolornscolor) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`nsString`**](##nsstring) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`lastPathComponent`**](#lastpathcomponent) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`pathExtension`**](#pathextension) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -1299,64 +1294,6 @@ Example
 String(base64: "SGVsbG8gV29ybGQh") = "Hello World!"
 String(base64: "hello") = nil
 ```
-
-
---
-
-
-## `bold`
-Bold string.
-
- - **type**: Read-Only Property.
- - **return type**: NSAttributedString
- - **availability**: `iOS 8+` `macOS 10.10+`.
-
-
---
-
-
-## `underline`
-Underlined string
-
- - **type**: Read-Only Property.
- - **return type**: NSAttributedString
- - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
-
-
---
-
-
-## `strikethrough`
-Strikethrough string.
-
- - **type**: Read-Only Property.
- - **return type**: NSAttributedString
- - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
-
-
---
-
-
-## `italic`
-Italic string.
-
- - **type**: Read-Only Property.
- - **return type**: NSAttributedString
- - **availability**: `iOS 8+`.
-
-
---
-
-
-## `colored(with color: UIColor/NSColor)`
-Add color to string.
-
- - **type**: Method.
- - **return type**: NSAttributedString
- - **parameters**:
-  - **color**: text color (NSColor for mac, and UI color for other operating systems).
- - **returns**: a NSAttributedString versions of string colored with given color. 
- - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
 --
