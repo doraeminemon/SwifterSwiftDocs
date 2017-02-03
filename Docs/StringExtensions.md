@@ -17,9 +17,11 @@
 | [**`isValidUrl`**](#isvalidurl) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`isValidHttpsUrl`**](#isvalidhttpsurl) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`isValidHttpUrl`**](#isvalidhttpurl) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`isValidSchemedUrl`**](#isvalidschemedurl) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`isNumeric`**](#isnumeric) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`lastCharacter`**](#lastcharacter) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`latinized`**](#latinized) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`length`**](#length) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`lines`**](#lines) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`mostCommonCharacter`**](#mostcommoncharacter) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`reversed`**](#reversed) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -306,6 +308,24 @@ Example
 --
 
 
+## `isValidSchemedUrl`
+Check if string is a valid schemed URL.
+
+ - **type**: Read-Only Property.
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+"https://google.com".isValidSchemedUrl -> true
+"google.com".isValidSchemedUrl -> false
+```
+
+
+--
+
+
 ## `isNumeric`
 Check if string contains only numbers.
 
@@ -354,6 +374,22 @@ Example
 "Hèllö Wórld!".latinized -> "Hello World!"
 ```
 
+
+--
+
+
+## `length`
+Array of strings separated by new lines.
+
+ - **type**: Read-Only Property
+ - **return type**: Int
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+"Hello world!".length -> 12
+```
 
 --
 
