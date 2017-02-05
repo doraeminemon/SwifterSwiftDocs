@@ -79,6 +79,7 @@
 | [**`appendingPathComponent(_ str: String)`**](#appendingpathcomponent_-str-string) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`appendingPathExtension(_ str: String)`**](#appendingpathextension_-str-string) | Method | 8+ | 9+ | 3+ | 10.10+ |
 
+
 --
 
 
