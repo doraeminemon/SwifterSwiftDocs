@@ -8,15 +8,15 @@
 | [**`randomItem`**](#randomitem) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`shuffled`**](#shuffled) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`sum`**](#sum) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`contains(_ elements: [Element])`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`firstIndex <Item: Equatable> (of item: Item)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`indexes(of item: Element)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`item(at index: Int)`**](#randomitem) | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`lastIndex <Item: Equatable> (of item: Item)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`contains(_ elements: [Element])`**](#contains_-elements-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`firstIndex <Item: Equatable> (of item: Item)`**](#firstindex-item-equatable-of-item-item) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`indexes(of item: Element)`**](#indexesof-item-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`item(at index: Int)`**](#itemat-index-int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`lastIndex <Item: Equatable> (of item: Item)`**](#lastindex-item-equatable-of-item-item) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`pop()`**](#pop) | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`prepend(_ newElement: Element)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`push(_ newElement: Element)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`removeAll(_ item: Element)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`prepend(_ newElement: Element)`**](#prepend_-newelement-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`push(_ newElement: Element)`**](#push_-newelement-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`removeAll(_ item: Element)`**](#removeall_-item-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`removeDuplicates()`**](#removeduplicates) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`shuffle()`**](#shuffle) | Method | 8+ | 9+ | 3+ | 10.10+ |
 
