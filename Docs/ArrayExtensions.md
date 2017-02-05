@@ -8,6 +8,7 @@
 | [**`randomItem`**](#randomitem) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`shuffled`**](#shuffled) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`sum`**](#sum) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`withoutDuplicates`**](#withoutduplicates) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`contains(_ elements: [Element])`**](#contains_-elements-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`firstIndex <Item: Equatable> (of item: Item)`**](#firstindex-item-equatable-of-item-item) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`indexes(of item: Element)`**](#indexesof-item-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
@@ -92,6 +93,25 @@ Example
 ```swift
 [1, 2, 3, 4, 5].sum -> 15
 [1.2, 2.3, 4.5, 3.4, 4.5].sum -> 15.9
+```
+
+
+--
+
+
+## `withoutDuplicates`
+Array with all duplicates removed from it.
+
+ - **type**: Read-Only Property.
+ - **return type**: [Element]
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[1, 2, 2, 3, 4, 5].withoutDuplicates -> [1, 2, 3, 4, 5]
+["h", "e", "l", "l", "o"].withoutDuplicates -> ["h", "e", "l", "o"]
+// It also works for all other types!
 ```
 
 
