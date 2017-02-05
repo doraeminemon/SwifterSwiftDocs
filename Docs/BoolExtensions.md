@@ -7,7 +7,7 @@
 | [**`int`**](#int) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`string`**](#string) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`toggled`**](#int) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`toggle()`**](#toggle()) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`toggle()`**](#toggle) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 
 --
 
