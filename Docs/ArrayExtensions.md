@@ -13,12 +13,12 @@
 | [**`indexes(of item: Element)`**](#indexesof-item-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`item(at index: Int)`**](#itemat-index-int) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`lastIndex <Item: Equatable> (of item: Item)`**](#lastindex-item-equatable-of-item-item) | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`pop()`**](#pop) | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`prepend(_ newElement: Element)`**](#prepend_-newelement-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`push(_ newElement: Element)`**](#push_-newelement-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`removeAll(_ item: Element)`**](#removeall_-item-element) | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`removeDuplicates()`**](#removeduplicates) | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`shuffle()`**](#shuffle) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`pop()`**](#pop) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`prepend(_ newElement: Element)`**](#prepend_-newelement-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`push(_ newElement: Element)`**](#push_-newelement-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`removeAll(_ item: Element)`**](#removeall_-item-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`removeDuplicates()`**](#removeduplicates) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`shuffle()`**](#shuffle) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 
 
 --
