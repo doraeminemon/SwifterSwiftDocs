@@ -70,6 +70,7 @@
 | [**`urlEncode()`**](#urlencode) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`*`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 | [**`init?(base64: String)`**](#initbase64-string) | Optional Initializer | 8+ | 9+ | 3+ | 10.10+ |
+| [**`init?(randomOfLength: Int)`**](#initrandomoflength-int) | Initializer | 8+ | 9+ | 3+ | 10.10+ |
 | [**`nsString`**](##nsstring) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`lastPathComponent`**](#lastpathcomponent) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`pathExtension`**](#pathextension) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -1310,6 +1311,25 @@ Example
 
 ```swift
 'bla' * 3 -> "blablabla"
+```
+
+
+--
+
+
+## `init(randomOfLength length: Int)`
+Create a new random string of given length.
+
+ - **type**: Initializer.
+ - **return type**: String
+ - **parameters**:
+  - **length**: number of characters in string.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+String(randomOfLength: 10) -> "gY8r3MHvlQ"
 ```
 
 
