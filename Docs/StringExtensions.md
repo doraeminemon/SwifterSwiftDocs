@@ -70,7 +70,7 @@
 | [**`urlEncode()`**](#urlencode) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`*`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 | [**`init?(base64: String)`**](#initbase64-string) | Optional Initializer | 8+ | 9+ | 3+ | 10.10+ |
-| [**`init?(randomOfLength: Int)`**](#initrandomoflength-int) | Initializer | 8+ | 9+ | 3+ | 10.10+ |
+| [**`init(randomOfLength: Int)`**](#initrandomoflength-length-int) | Initializer | 8+ | 9+ | 3+ | 10.10+ |
 | [**`nsString`**](##nsstring) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`lastPathComponent`**](#lastpathcomponent) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`pathExtension`**](#pathextension) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
