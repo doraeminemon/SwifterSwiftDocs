@@ -4,10 +4,10 @@
 ## Table of Contents
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
-| [**`has(key: Key)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`jsonData(prettify: Bool)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`jsonString(prettify: Bool)`**]() | Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`lowercaseAllKeys()`**]() | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`has(key: Key)`**](#haskey-key) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`jsonData(prettify: Bool)`**](#jsondataprettify-bool--false) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`jsonString(prettify: Bool)`**](#jsonstringprettify-bool--false) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`lowercaseAllKeys()`**](#lowercaseallkeys) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 
 
 --
