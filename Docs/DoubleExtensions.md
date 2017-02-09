@@ -12,7 +12,7 @@
 | [**`radiansToDegrees`**](#radianstodegrees) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`randomBetween(min: Double, max: Double)`**](#) | Static Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`randomBetween(min: Double, max: Double)`**](#randombetweenmin-double-max-double) | Static Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`**`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
+| [**` ** `**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 | [**`√`**](#operator--1) | Prefix Operator | 8+ | 9+ | 3+ | 10.10+ |
 | [**`±`**](#operator--2) | Prefix/Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
