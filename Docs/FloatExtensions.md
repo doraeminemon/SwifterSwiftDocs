@@ -10,10 +10,10 @@
 | [**`degreesToRadians`**](#degreestoradians) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`floor`**](#floor) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`radiansToDegrees`**](#radianstodegrees) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
-| [**`randomBetween(min: Float, max: Float)`**](#) | Static Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`√`**](#) | Prefix Operator | 8+ | 9+ | 3+ | 10.10+ |
-| [**`**`**](#) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
-| [**`±`**](#) | Prefix/Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
+| [**`randomBetween(min: Float, max: Float)`**](#randombetweenmin-float-max-float) | Static Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`**`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
+| [**`√`**](#operator--1) | Prefix Operator | 8+ | 9+ | 3+ | 10.10+ |
+| [**`±`**](#operator--2) | Prefix/Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
 
 --
