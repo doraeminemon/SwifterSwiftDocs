@@ -38,12 +38,9 @@
 ### [String Extensions](./Docs/StringExtensions.md)
 ### [SwifterSwift](./Docs/SwifterSwift.md)
 
-## List of UI Extensions
-### [CGFloat Extensions](./Docs/Cocoa/CGFloatExtensions.md)
-### [CGPoint Extensions](./Docs/Cocoa/CGPointExtensions.md)
-### [CGSize Extensions](./Docs/Cocoa/CGSizeExtensions.md)
-### [NSAttributedString Extensions](./Docs/Cocoa/NSAttributedStringExtensions.md)
-### [NSColor Extensions](./Docs/Cocoa/NSColorExtensions.md)
+
+## List of UIKit Extensions
+
 ### [UIAlertController Extensions](./Docs/UIKit/UIAlertControllerExtensions.md)
 ### [UIBarButtonItem Extensions](./Docs/UIKit/UIBarButtonItemExtensions.md)
 ### [UIButton Extensions](./Docs/UIKit/UIButtonExtensions.md)
@@ -65,6 +62,15 @@
 ### [UITextView Extensions](./Docs/UIKit/UITextViewExtensions.md)
 ### [UIViewController Extensions](./Docs/UIKit/UIViewControllerExtensions.md)
 ### [UIView Extensions](./Docs/UIKit/UIViewExtensions.md)
+
+
+## List of Cocoa Extensions
+
+### [CGFloat Extensions](./Docs/Cocoa/CGFloatExtensions.md)
+### [CGPoint Extensions](./Docs/Cocoa/CGPointExtensions.md)
+### [CGSize Extensions](./Docs/Cocoa/CGSizeExtensions.md)
+### [NSAttributedString Extensions](./Docs/Cocoa/NSAttributedStringExtensions.md)
+### [NSColor Extensions](./Docs/Cocoa/NSColorExtensions.md)
 
 
 ## Installation
