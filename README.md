@@ -134,7 +134,7 @@ let package = Package(
     name: "YOUR_PROJECT_NAME",
     targets: [],
     dependencies: [
-        .Package(url: "https://github.com/SwifterSwift/SwifterSwift.git", versions: Version(1,4,0)..<Version(3, .max, .max)),
+        .Package(url: "https://github.com/SwifterSwift/SwifterSwift.git", majorVersion: 1),
     ]
 )
 ```
