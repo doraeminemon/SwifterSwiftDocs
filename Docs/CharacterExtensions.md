@@ -73,6 +73,38 @@ Example
 
 --
 
+## `isUpper`
+Check if character is uppercase.
+
+ - **type**: Read-Only Property.
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+'C'.isUpper -> true
+'c'.isUpper -> false
+```
+
+--
+
+## `isLower`
+Check if character is lowercase.
+
+ - **type**: Read-Only Property.
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+'c'.isLower -> true
+'C'.isLower -> false
+```
+
+--
+
 ## `Operator *`
 Repeat character multiple times.
 
