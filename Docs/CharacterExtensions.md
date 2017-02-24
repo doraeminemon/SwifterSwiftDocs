@@ -6,6 +6,8 @@
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`isEmoji`**](#isemoji) | Read-Only Property | 8+ | 9+ | 3+ |  10.10+ |
 | [**`isNumber`**](#isnumber) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`isUppercased`**](#isuppercased) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
+| [**`isLowercased`**](#islowercased) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`int`**](#int) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`string`**](#string) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`*`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
@@ -38,6 +40,38 @@ Example
 
 ```swift
 '3'.isNumber -> true
+```
+
+--
+
+## `isUppercased`
+Check if character is uppercased.
+
+ - **type**: Read-Only Property.
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+'C'.isUppercased -> true
+'c'.isUppercased -> false
+```
+
+--
+
+## `isLowercased`
+Check if character is lowercased.
+
+ - **type**: Read-Only Property.
+ - **return type**: Bool
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+'c'.isLowercased -> true
+'C'.isLowercased -> false
 ```
 
 --
