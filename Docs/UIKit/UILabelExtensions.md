@@ -1,6 +1,24 @@
 # UILabel Extensions
 
-### Properties:
-|Name | Description |
-|:--- | :--- |
-|**requiredHeight**| Required height for a label |
+##Table of Contents
+| Name | Type | iOS | tvOS | watchOS | macOS |
+|:--- | :--- | :---: | :---: | :---: | :---: |
+| [**`requiredHeight`**](#requiredheight) | Property | 10+ | 10+ | - | - |
+
+--
+
+# `requiredHeight`
+Required height for a label
+
+- **type**: Property.
+- **return type**: CGFloat
+- **availability**: `iOS 10+`, `tvOS 10+`.
+
+
+Example
+
+```swift
+let label = UILabel(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+let reqHeight = label.requiredHeight
+```
+
