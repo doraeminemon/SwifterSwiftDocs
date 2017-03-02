@@ -3,7 +3,7 @@
 ##Table of Contents
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
-| [**`requiredHeight`**](#requiredheight) | Property | 10+ | 10+ | - | - |
+| [**`requiredHeight`**](#requiredheight) | Read-Only Property | 10+ | 10+ | - | - |
 
 --
 
