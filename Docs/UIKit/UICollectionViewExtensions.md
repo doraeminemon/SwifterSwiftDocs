@@ -3,9 +3,9 @@
 ##Table of Contents
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
-| [**`indexPathForLastItem`**](#indexpathforlastitem) | Property | 8+ | 9+ | - | - |
-| [**`lastSection`**](#lastsection) | Property | 8+ | 9+ | - | - |
-| [**`numberOfItems`**](#numberofitems) | Property | 8+ | 9+ | - | - |
+| [**`indexPathForLastItem`**](#indexpathforlastitem) | Read-Only Property | 8+ | 9+ | - | - |
+| [**`lastSection`**](#lastsection) | Read-Only Property | 8+ | 9+ | - | - |
+| [**`numberOfItems`**](#numberofitems) | Read-Only Property | 8+ | 9+ | - | - |
 | [**`indexPathForLastItem(inSection section: Int)`**](#indexpathforlastiteminsection-section-int) | Method | 8+ | 9+ | - | - |
 | [**`reloadData(_ completion: () -> Void)`**](#reloaddata_-completion----void) | Method | 8+ | 9+ | - | - |
 | [**`dequeReusableCell <T: UICollectionViewCell> (withClass name: T.Type, for indexPath: IndexPath)`**](#dequereusablecell-t-uicollectionviewcell-withclass-name-ttype-for-indexpath-indexpath) | Method | 8+ | 9+ | - | - |
