@@ -10,7 +10,7 @@
 # `requiredHeight`
 Required height for a label
 
-- **type**: Property.
+- **type**: Read-Only Property.
 - **return type**: CGFloat
 - **availability**: `iOS 10+`, `tvOS 10+`.
 

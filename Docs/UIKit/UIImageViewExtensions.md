@@ -62,7 +62,7 @@ Blurred version of an image view.
 - **type**: Method
 - **parameters**:
     - **style**: UIBlurEffectStyle (default is .light).
-- *returns*: blurred version of self.
+- **returns**: blurred version of self.
 - **return type**: UIImageView
 - **availability**: `iOS 8+`, `tvOS 9+`.
 - **unit tests**: `iOS`, `tvOS`.

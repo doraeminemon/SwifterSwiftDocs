@@ -14,7 +14,7 @@
 # `isVisible`
 Check if ViewController is onscreen and not hidden.
 
-- **type**: Property.
+- **type**: Read-Only Property.
 - **return type**: Bool
 - **availability**: `iOS 8+`, `tvOS 9+`.
 - **unit tests**: `iOS`, `tvOS`.
@@ -31,7 +31,7 @@ let visibility = viewController.isVisible
 # `navigationBar`
 NavigationBar in a ViewController.
 
-- **type**: Property.
+- **type**: Read-Only Property.
 - **return type**: UINavigationBar
 - **availability**: `iOS 8+`, `tvOS 9+`.
 - **unit tests**: `iOS`, `tvOS`.
