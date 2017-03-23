@@ -55,6 +55,7 @@
 ### [UISearchBar Extensions](./Docs/UIKit/UISearchBarExtensions.md)
 ### [UISegmentedControl Extensions](./Docs/UIKit/UISegmentedControlExtensions.md)
 ### [UISlider Extensions](./Docs/UIKit/UISliderExtensions.md)
+### [UIStoryboard Extensions](./Docs/UIKit/UIStoryboardExtensions.md)
 ### [UISwitch Extensions](./Docs/UIKit/UISwitchExtensions.md)
 ### [UITabBar Extensions](./Docs/UIKit/UITabBarExtensions.md)
 ### [UITableView Extensions](./Docs/UIKit/UITableViewExtensions.md)
