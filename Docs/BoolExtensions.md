@@ -11,7 +11,7 @@
 | [**`toggle()`**](#toggle) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `int`
@@ -27,7 +27,9 @@ Example
 true.int -> 1
 ```
 
---
+
+---
+
 
 ## `string`
 Return "true" if true, or "false" if false.
@@ -42,7 +44,9 @@ Example
 false.string -> "false"
 ```
 
---
+
+---
+
 
 ## `toggled`
 Return inversed value of bool.
@@ -57,7 +61,9 @@ Example
 false.toggled -> true
 ```
 
---
+
+---
+
 
 ## `toggle()`
 Toggle value for bool.
@@ -74,3 +80,6 @@ var x = true
 x.toggle()
 print(x) -> false
 ```
+
+
+---

@@ -18,7 +18,7 @@
 | [**`±`**](#operator--2) | Prefix/Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `abs`
@@ -36,7 +36,7 @@ Double(-12.12) -> 12.12
 ```
 
 
---
+---
 
 
 ## `asLocaleCurrency`
@@ -54,7 +54,7 @@ Double(10).asLocaleCurrency ->"$10.00"
 ```
 
 
---
+---
 
 
 ## `ceil`
@@ -73,7 +73,7 @@ Double(10).ceil -> 10
 ```
 
 
---
+---
 
 
 
@@ -91,7 +91,7 @@ Double(180).degreesToRadians -> M_PI
 ```
 
 
---
+---
 
 
 ## `floor`
@@ -110,7 +110,7 @@ Double(10).floor -> 10
 ```
 
 
---
+---
 
 
 ## `radiansToDegrees`
@@ -127,7 +127,7 @@ M_PI.radiansToDegrees -> 180.0
 ```
 
 
---
+---
 
 
 ## `randomBetween(min: Double, max: Double)`
@@ -148,7 +148,7 @@ Double.randomBetween(min: 1, max: 10) -> random double number between 1 and 10
 ```
 
 
---
+---
 
 
 ## `Operator **`
@@ -170,7 +170,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Operator √`
@@ -190,7 +190,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Operator ±`
@@ -206,3 +206,6 @@ Example
 5.0 ± 2.0 -> (3.0, 7.0)
 ± 2.0 -> (2.0, -2.0)
 ```
+
+
+---

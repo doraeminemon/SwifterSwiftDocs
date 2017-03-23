@@ -7,7 +7,7 @@
 | [**`replaceTitle(with image: UIImage)`**](#replacetitlewith-image-uiimage) | Method | 8+ | 9+ | - | - |
 
 
---
+---
 
 
 ## `replaceTitle(with image: UIImage)`
@@ -27,3 +27,5 @@ let navigationItem = UINavigationItem()
 let image = UIImage()
 navigationItem.replaceTitle(with: image)
 ```
+
+---

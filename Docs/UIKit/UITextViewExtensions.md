@@ -9,7 +9,7 @@
 | [**`scrollToTop()`**](#scrolltotop) | Method | 8+ | 9+ | - | - |
 
 
---
+---
 
 
 # `clear()`
@@ -27,7 +27,9 @@ let textView = UITextView()
 textView.clear()
 ```
 
---
+
+---
+
 
 # `scrollToBottom()`
 Scroll to the bottom of text view.
@@ -44,7 +46,9 @@ let textView = UITextView()
 textView.scrollToBottom()
 ```
 
---
+
+---
+
 
 # `scrollToTop()`
 Scroll to the top of text view.
@@ -60,3 +64,5 @@ Example
 let textView = UITextView()
 textView.scrollToTop()
 ```
+
+---

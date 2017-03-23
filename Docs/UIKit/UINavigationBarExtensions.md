@@ -9,7 +9,7 @@
 | [**`setColors(background: UIColor, text: UIColor)`**](#setcolorsbackground-uicolor-text-uicolor) | Method | 8+ | 9+ | - | - |
 
 
---
+---
 
 
 # `setTitleFont(_ font: UIFont, color: UIColor = .black)`
@@ -32,7 +32,9 @@ navigationBar.setTitleFont(font)
 navigationBar.setTitleFont(font, color: .green)
 ```
 
---
+
+---
+
 
 # `makeTransparent(withTint: UIColor = .white)`
 Make navigation bar transparent.
@@ -52,7 +54,9 @@ navigationBar.makeTransparent()
 navigationBar.makeTransparent(withTint: .black)
 ```
 
---
+
+---
+
 
 # `setColors(background: UIColor, text: UIColor)`
 Set navigationBar background and text colors.
@@ -71,3 +75,5 @@ Example
 let navigationBar = UINavigationBar()
 navigationBar.setColors(background: .blue, text: .red)
 ```
+
+---

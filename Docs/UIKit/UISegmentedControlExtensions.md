@@ -8,7 +8,7 @@
 | [**`segmentImages`**](#segmentimages) | Property | 8+ | 9+ | - | - |
 
 
---
+---
 
 
 ## `segmentTitles`
@@ -27,7 +27,9 @@ let titles = segmentedControl.segmentTitles
 segmentedControl.segmentTitles = ["Swifter", "Swift"]
 ```
 
---
+
+---
+
 
 ## `segmentImages`
 Segments images.
@@ -44,3 +46,6 @@ let segmentedControl = UISegmentedControl()
 let images = segmentedControl.segmentImages
 segmentedControl.segmentImages = [UIImage(), UIImage()]
 ```
+
+
+---

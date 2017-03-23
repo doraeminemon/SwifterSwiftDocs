@@ -9,7 +9,7 @@
 | [**`clear()`**](#clear) | Method | 8+ | 9+ | - | - |
 
 
---
+---
 
 
 ## `textField`
@@ -27,7 +27,7 @@ let searchBar = UISearchBar()
 let textField = searchBar.textField
 ```
 
---
+---
 
 ## `trimmedText`
 Text with no spaces or new lines in beginning and end (if applicable).
@@ -44,7 +44,7 @@ let searchBar = UISearchBar()
 let trimmedText = searchBar.trimmedText
 ```
 
---
+---
 
 ## `clear()`
 Clear text.
@@ -60,3 +60,6 @@ Example
 let searchBar = UISearchBar()
 searchBar.clear()
 ```
+
+
+---

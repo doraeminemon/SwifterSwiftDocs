@@ -13,7 +13,7 @@
 | [**`+=`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `bolded`
@@ -24,7 +24,7 @@ Bolded string.
  - **availability**: `iOS 8+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `underlined`
@@ -35,6 +35,8 @@ Underlined string.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
+---
+
 
 ## `italicized`
 Italicized string.
@@ -44,8 +46,7 @@ Italicized string.
  - **availability**: `iOS 8+`.
 
 
---
-
+---
 
 
 ## `struckthrough`
@@ -56,7 +57,7 @@ Struckthrough string.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `colored(with color: UIColor/NSColor)`
@@ -70,7 +71,8 @@ Add color to string.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
+
 
 ## `Operator +=`
 Add a NSAttributedString to another NSAttributedString.
@@ -80,4 +82,4 @@ Add a NSAttributedString to another NSAttributedString.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---

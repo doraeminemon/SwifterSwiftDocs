@@ -8,7 +8,7 @@
 | [**`nsColor`**](#nscolor) | Read-Only Property | - | - | - | 10.10+ |
 
 
---
+---
 
 
 ## `uiColor`
@@ -19,7 +19,7 @@ UIColor.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+`.
 
 
---
+---
 
 
 ## `nsColor`
@@ -29,4 +29,5 @@ NSColor.
  - **return type**: NSColor
  - **availability**: `macOS 10.10+`.
 
---
+
+---

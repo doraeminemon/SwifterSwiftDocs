@@ -6,7 +6,9 @@
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`addTargetForAction(target: AnyObject, action: Selector)`**](#addtargetforactiontarget-anyobject-action-selector) | Method | 8+ | 9+ | - | - |
 
---
+
+---
+
 
 ## `addTargetForAction(target: AnyObject, action: Selector)`
 Add Target to UIBarButtonItem
@@ -26,4 +28,4 @@ UIBarButtonItem().addTargetForAction(target: UIViewController(), action: #select
 ```
 
 
---
+---

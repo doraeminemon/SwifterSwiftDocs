@@ -9,7 +9,7 @@
 | [**`makeTransparent(withTint: UIColor)`**](#maketransparentwithtint-uicolor--white) | Method | 8+ | 9+ | - | - |
 
 
---
+---
 
 
 ## `popViewController(completion: (()->Void)? = nil)`
@@ -32,7 +32,9 @@ navigationController.popViewController() {
 }
 ```
 
---
+
+---
+
 
 ## `pushViewController(viewController: UIViewController, completion: (()->Void)? = nil)`
 Push ViewController with completion handler.
@@ -56,7 +58,9 @@ navigationController.pushViewController(viewController) {
 }
 ```
 
---
+
+---
+
 
 ## `makeTransparent(withTint: UIColor = .white)`
 Make navigation controller's navigation bar transparent.
@@ -75,3 +79,5 @@ let navigationController = UINavigationController()
 navigationController.makeTransparent()
 navigationController.makeTransparent(withTint: .black)
 ```
+
+---

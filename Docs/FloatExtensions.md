@@ -17,7 +17,7 @@
 | [**`±`**](#operator--2) | Prefix/Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `abs`
@@ -35,7 +35,7 @@ Float(-12.12) -> 12.12
 ```
 
 
---
+---
 
 
 ## `asLocaleCurrency`
@@ -53,7 +53,7 @@ Float(10).asLocaleCurrency ->"$10.00"
 ```
 
 
---
+---
 
 
 ## `ceil`
@@ -72,8 +72,7 @@ Float(10).ceil -> 10
 ```
 
 
---
-
+---
 
 
 ## `degreesToRadians`
@@ -90,7 +89,7 @@ Float(180).degreesToRadians -> M_PI
 ```
 
 
---
+---
 
 
 ## `floor`
@@ -109,7 +108,7 @@ Float(10).floor -> 10
 ```
 
 
---
+---
 
 
 ## `radiansToDegrees`
@@ -126,7 +125,7 @@ M_PI.radiansToDegrees -> 180.0
 ```
 
 
---
+---
 
 
 ## `randomBetween(min: Float, max: Float)`
@@ -148,7 +147,7 @@ Float.randomBetween(min: 1, max: 10) -> random float number between 1 and 10
 ```
 
 
---
+---
 
 
 ## `Operator **`
@@ -170,7 +169,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Operator √`
@@ -190,7 +189,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Operator ±`
@@ -206,3 +205,6 @@ Example
 5.0 ± 2.0 -> (3.0, 7.0)
 ± 2.0 -> (2.0, -2.0)
 ```
+
+
+---

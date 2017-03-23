@@ -11,7 +11,7 @@
 | [**`removeNotificationsObserver()`**](#removenotificationsobserver) | Method | 8+ | 9+ | - | - |
 
 
---
+---
 
 
 # `isVisible`
@@ -29,7 +29,9 @@ let viewController = UIViewController()
 let visibility = viewController.isVisible
 ```
 
---
+
+---
+
 
 # `navigationBar`
 NavigationBar in a ViewController.
@@ -46,7 +48,9 @@ let viewController = UIViewController()
 let navBar = viewController.navigationBar
 ```
 
---
+
+---
+
 
 # `addNotificationObserver(name: Notification.Name, selector: Selector)`
 Assign as listener to notification.
@@ -67,7 +71,9 @@ let notification = Notification.Name("SwifterSwift")
 viewController.addNotificationObserver(name: notification)
 ```
 
---
+
+---
+
 
 # `removeNotificationObserver(name: Notification.Name)`
 Unassign as listener to notification.
@@ -87,7 +93,9 @@ let notification = Notification.Name("SwifterSwift")
 viewController.removeNotificationObserver(name: notification)
 ```
 
---
+
+---
+
 
 # `removeNotificationsObserver()`
 Unassign as listener from all notifications.
@@ -105,3 +113,6 @@ Example
 let viewController = UIViewController()
 viewController.removeNotificationsObserver()
 ```
+
+
+---

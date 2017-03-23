@@ -7,7 +7,7 @@
 | [**`toggle(animated: Bool)`**](#toggleanimated-bool--true) | Method | 8+ | - | - | - |
 
 
---
+---
 
 
 # `toggle(animated: Bool = true)`
@@ -27,3 +27,6 @@ let switch = UISwitch()
 switch.toggle()
 switch.toggle(animated: false)
 ```
+
+
+---

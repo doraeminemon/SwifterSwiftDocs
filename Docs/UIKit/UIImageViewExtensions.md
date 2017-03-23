@@ -9,7 +9,7 @@
 | [**`blurred(withStyle style: UIBlurEffectStyle)`**](#blurredwithstyle-style-uiblureffectstyle--light) | Method | 8+ | 9+ | - | - |
 
 
---
+---
 
 
 # `download(from url: URL, contentMode: UIViewContentMode = .scaleAspectFit, placeholder: UIImage? = nil, completionHandler: ((UIImage?) -> Void)? = nil)`
@@ -37,7 +37,9 @@ imageView.download(from: url, contentMode: .scaleAspectFill, placeholder: placeh
 }
 ```
 
---
+
+---
+
 
 # `blur(withStyle style: UIBlurEffectStyle = .light)`
 Make image view blurry.
@@ -57,7 +59,9 @@ imageView.blur()
 imageView.blur(withStyle: .dark)
 ```
 
---
+
+---
+
 
 # `blurred(withStyle style: UIBlurEffectStyle = .light)`
 Blurred version of an image view.
@@ -75,3 +79,5 @@ let imageView = UIImageView()
 let blurredImageView = imageView.blurred()
 let darkBlurred = imageView.blur(withStyle: .dark)
 ```
+
+---

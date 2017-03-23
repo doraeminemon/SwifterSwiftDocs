@@ -16,7 +16,9 @@
 | [**`register <T: UICollectionViewCell> (cellWithClass name: T.Type)`**](#register-t-uicollectionviewcell-cellwithclass-name-ttype) | Method | 8+ | 9+ | - | - |
 | [**`register <T: UICollectionReusableView> (nib: UINib?, forSupplementaryViewOfKind kind: String, withClass name: T.Type)`**](#register-t-uicollectionreusableview-nib-uinib-forsupplementaryviewofkind-kind-string-withclass-name-ttype) | Method | 8+ | 9+ | - | - |
 
---
+
+---
+
 
 # `indexPathForLastItem`
 Index path of last item in collectionView.
@@ -50,7 +52,9 @@ let collectionView = UICollectionView()
 let lastSection = collectionView.lastSection
 ```
 
---
+
+---
+
 
 # `numberOfItems`
 Number of all items in all sections of collectionView.
@@ -67,7 +71,9 @@ let collectionView = UICollectionView()
 let itemCount = collectionView.numberOfItems
 ```
 
---
+
+---
+
 
 # `indexPathForLastItem(inSection section: Int)`
 IndexPath for last item in section.
@@ -86,7 +92,9 @@ let collectionView = UICollectionView()
 let indexPath = collectionView.indexPathForLastItem(section: 0)
 ```
 
---
+
+---
+
 
 # `reloadData(_ completion: () -> Void)`
 Reload data with a completion handler.
@@ -106,7 +114,9 @@ collectionView.reloadData {
 }
 ```
 
---
+
+---
+
 
 # `dequeReusableCell <T: UICollectionViewCell> (withClass name: T.Type, for indexPath: IndexPath)`
 Deque reusable UICollectionViewCell using class name.
@@ -127,7 +137,9 @@ let indexPath = IndexPath()
 let cell = collectionView.dequeReusableCell(withClass: UICollectionViewCell.self, for: indexPath)
 ```
 
---
+
+---
+
 
 # `dequeReusableSupplementaryView <T: UICollectionReusableView> (ofKind: String, withClass name: T.Type, for indexPath: IndexPath)`
 Deque reusable UICollectionReusableView using class name.
@@ -149,7 +161,9 @@ let indexPath = IndexPath()
 let reusableView = collectionView.dequeReusableSupplementaryView(ofKind: "UICollectionReusableView", withClass: UICollectionReusableView.self, for: indexPath)
 ```
 
---
+
+---
+
 
 # `register <T: UICollectionReusableView> (supplementaryViewOfKind kind: String, withClass name: T.Type)`
 Register UICollectionReusableView using class name.
@@ -168,7 +182,9 @@ let collectionView = UICollectionView()
 collectionView.register(supplementaryViewOfKind: "UICollectionReusableView", withClass: UICollectionReusableView.self)
 ```
 
---
+
+---
+
 
 # `register <T: UICollectionViewCell> (nib: UINib?, forCellWithClass name: T.Type)`
 Register UICollectionViewCell using class name.
@@ -188,7 +204,9 @@ let nib = UINib()
 collectionView.register(nib: nib, forCellWithClass: UICollectionViewCell.self)
 ```
 
---
+
+---
+
 
 # `register <T: UICollectionViewCell> (cellWithClass name: T.Type)`
 Register UICollectionViewCell using class name.
@@ -206,7 +224,9 @@ let collectionView = UICollectionView()
 collectionView.register(cellWithClass: UICollectionViewCell.self)
 ```
 
---
+
+---
+
 
 # `register <T: UICollectionReusableView> (nib: UINib?, forSupplementaryViewOfKind kind: String, withClass name: T.Type)`
 Register UICollectionReusableView using class name.
@@ -226,3 +246,6 @@ let collectionView = UICollectionView()
 let nib = UINib()
 collectionView.register(nib: nib, forSupplementaryViewOfKind: "UICollectionReusableView", withClass: UICollectionReusableView.self)
 ```
+
+
+---
