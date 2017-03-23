@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`forEachInParallel(_ each: (Self.Iterator.Element) -> ())`**](#foreachinparallel_-each-selfiteratorelement---) | Method | 8+ | 9+ | 3+ | 10.10+ |

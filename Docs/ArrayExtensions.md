@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`average`**](#average) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -343,4 +344,3 @@ Example
 [1, 2, 3, 4, 5].shuffle() // shuffles array
 // It also works for all other types!
 ```
-

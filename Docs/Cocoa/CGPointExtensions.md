@@ -1,6 +1,7 @@
 # CGPoint Extensions
 
 ### Methods:
+
 |Name | Return | Description |
 |:--- | :--- | :--- |
 |**distance(from point: CGPoint)**| CGFloat | Distance from another CGPoint. |
@@ -8,6 +9,7 @@
 
 
 ### Operators:
+
 |Name | Return | Description |
 |:--- | :--- | :--- |
 |**+**| CGPoint | Add two CGPoints. |

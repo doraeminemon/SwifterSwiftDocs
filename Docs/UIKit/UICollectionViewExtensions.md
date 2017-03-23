@@ -1,6 +1,7 @@
 # UICollectionView Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`indexPathForLastItem`**](#indexpathforlastitem) | Read-Only Property | 8+ | 9+ | - | - |
@@ -225,5 +226,3 @@ let collectionView = UICollectionView()
 let nib = UINib()
 collectionView.register(nib: nib, forSupplementaryViewOfKind: "UICollectionReusableView", withClass: UICollectionReusableView.self)
 ```
-
-

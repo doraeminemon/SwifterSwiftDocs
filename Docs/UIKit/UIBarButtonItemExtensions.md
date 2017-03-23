@@ -1,6 +1,7 @@
 # UIBarButtonItem Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`addTargetForAction(target: AnyObject, action: Selector)`**](#addtargetforactiontarget-anyobject-action-selector) | Method | 8+ | 9+ | - | - |

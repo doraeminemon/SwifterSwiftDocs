@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`abs`**](#abs) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -137,7 +138,7 @@ Converts string format to CamelCase.
  - **parameters**:
  	- **min**: minimum number to start random from.
  	- **max**: maximum number random number end before.
- - **returns**: random double between two double values. 
+ - **returns**: random double between two double values.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 Example
@@ -205,4 +206,3 @@ Example
 5.0 ± 2.0 -> (3.0, 7.0)
 ± 2.0 -> (2.0, -2.0)
 ```
-

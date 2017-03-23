@@ -1,6 +1,7 @@
 # UIViewController Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`isVisible`**](#isvisible) | Read-Only Property | 8+ | 9+ | - | - |
@@ -9,7 +10,9 @@
 | [**`removeNotificationObserver(name: Notification.Name)`**](#removenotificationobservername-notificationname) | Method | 8+ | 9+ | - | - |
 | [**`removeNotificationsObserver()`**](#removenotificationsobserver) | Method | 8+ | 9+ | - | - |
 
+
 --
+
 
 # `isVisible`
 Check if ViewController is onscreen and not hidden.
@@ -102,4 +105,3 @@ Example
 let viewController = UIViewController()
 viewController.removeNotificationsObserver()
 ```
-

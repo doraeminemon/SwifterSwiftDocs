@@ -1,9 +1,12 @@
 # UITabBar Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`setColors(background: UIColor?, selectedBackground: UIColor?, item: UIColor?, selectedItem: UIColor?)`**](#setcolorsbackground-uicolor--nil-selectedbackground-uicolor--nil-item-uicolor--nil-selecteditem-uicolor--nil) | Method | 8+ | 9+ | - | - |
+
+--
 
 # `setColors(background: UIColor? = nil, selectedBackground: UIColor? = nil, item: UIColor? = nil, selectedItem: UIColor? = nil)`
 Set tabBar colors.

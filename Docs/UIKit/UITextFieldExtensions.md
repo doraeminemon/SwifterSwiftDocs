@@ -1,6 +1,7 @@
 # UITextField Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`isEmpty`**](#isempty) | Read-Only Property | 8+ | 9+ | - | - |
@@ -10,7 +11,9 @@
 | [**`clear()`**](#clear) | Method | 8+ | 9+ | - | - |
 | [**`setPlaceHolderTextColor(_ color: UIColor)`**](#setplaceholdertextcolor_-color-uicolor) | Method | 8+ | 9+ | - | - |
 
+
 --
+
 
 # `isEmpty`
 Check if text field is empty.

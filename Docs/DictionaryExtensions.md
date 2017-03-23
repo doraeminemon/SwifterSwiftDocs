@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`has(key: Key)`**](#haskey-key) | Method | 8+ | 9+ | 3+ | 10.10+ |

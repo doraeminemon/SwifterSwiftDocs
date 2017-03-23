@@ -1,6 +1,7 @@
 # CGFloat Extensions
 
 ### Properties:
+
 |Name | Description |
 |:--- | :--- |
 |**abs**| Absolute of CGFloat value. |
@@ -11,6 +12,7 @@
 
 
 ### Methods:
+
 |Name | Return | Description |
 |:--- | :--- | :--- |
 |**randomBetween(min: CGFloat, max: CGFloat)**| CGFloat | Random CGFloat between two CGFloat values. |

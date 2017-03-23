@@ -1,6 +1,7 @@
 # UIView Extensions
 
 ### Enums:
+
 |Name | Description |
 |:--- | :--- |
 |**ShakeDirection**| Shake directions of a view. |
@@ -8,6 +9,7 @@
 |**ShakeAnimationType**| Shake animations types. |
 
 ### Properties:
+
 |Name | Description |
 |:--- | :--- |
 |**borderColor**| Border color of view; also inspectable from Storyboard. |
@@ -27,6 +29,7 @@
 
 
 ### Methods:
+
 |Name | Return | Description |
 |:--- | :--- | :--- |
 |**roundCorners(_ corners: UIRectCorner, radius: CGFloat)**| -- | Set some or all corners radiuses of view. |

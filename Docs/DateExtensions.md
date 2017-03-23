@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`DayNameStyle`**](#daynamestyle) | Enum | 8+ | 9+ | 3+ | 10.10+ |

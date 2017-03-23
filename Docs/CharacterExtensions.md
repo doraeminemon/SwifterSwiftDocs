@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`isEmoji`**](#isemoji) | Read-Only Property | 8+ | 9+ | 3+ |  10.10+ |
@@ -12,7 +13,9 @@
 | [**`string`**](#string) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`*`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
+
 --
+
 
 ## `isEmoji`
 Check if character is emoji.

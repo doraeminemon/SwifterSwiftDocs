@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`base64Decoded`**](#base64decoded) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -858,7 +859,7 @@ Check if string contains one or more instance of substring.
  - **parameters**:
   - **string**: substring to search for.
   - **caseSensitive**: set true for case sensitive search (default is true).
- - **returns**: true if string contains one or more instance of substring. 
+ - **returns**: true if string contains one or more instance of substring.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 Example

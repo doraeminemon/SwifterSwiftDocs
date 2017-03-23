@@ -1,6 +1,7 @@
 # UIColor Extensions
 
 ### Properties:
+
 |Name | Description |
 |:--- | :--- |
 |**complementary**| Get color complementary (read-only, if applicable). |
@@ -14,12 +15,14 @@
 |**random**| Random color. |
 
 ### Methods:
+
 |Name | Return | Description |
 |:--- | :--- | :--- |
 |**blend(_ color1: UIColor, intensity1: CGFloat = 0.5, with color2: UIColor, intensity2: CGFloat = 0.5)**| UIColor | Blend two UIColors |
 
 
 ### Initializers:
+
 |Name | Description |
 |:--- | :--- |
 |**init(hex: Int, transparency: CGFloat = 1)**| Create UIColor from hexadecimal value with optional transparency. |
@@ -29,6 +32,7 @@
 
 
 ### Structs:
+
 |Name | Description |
 |:--- | :--- |
 |**social**| Brand identity color of popular social media platform. |

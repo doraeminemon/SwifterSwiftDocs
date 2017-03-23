@@ -1,13 +1,16 @@
 # UINavigationBar Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`setTitleFont(_ font: UIFont, color: UIColor)`**](#settitlefont_-font-uifont-color-uicolor--black) | Method | 8+ | 9+ | - | - |
 | [**`makeTransparent(withTint: UIColor)`**](#maketransparentwithtint-uicolor--white) | Method | 8+ | 9+ | - | - |
 | [**`setColors(background: UIColor, text: UIColor)`**](#setcolorsbackground-uicolor-text-uicolor) | Method | 8+ | 9+ | - | - |
 
+
 --
+
 
 # `setTitleFont(_ font: UIFont, color: UIColor = .black)`
 Set Navigation Bar title, title color and font.

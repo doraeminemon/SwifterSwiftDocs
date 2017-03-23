@@ -1,6 +1,7 @@
 # CGColor Extensions
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`uiColor`**](#uicolor) | Read-Only Property | 8+ | 9+ | 3+ | - |

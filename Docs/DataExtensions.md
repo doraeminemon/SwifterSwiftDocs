@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`attributedString`**](#attributedstring) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |

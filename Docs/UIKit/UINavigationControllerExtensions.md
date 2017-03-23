@@ -1,13 +1,16 @@
 # UINavigationController Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`popViewController(completion: (()->Void)?)`**](#popviewcontrollercompletion--void--nil) | Method | 8+ | 9+ | - | - |
 | [**`pushViewController(viewController: UIViewController, completion: (()->Void)?)`**](#pushviewcontrollerviewcontroller-uiviewcontroller-completion--void--nil) | Method | 8+ | 9+ | - | - |
 | [**`makeTransparent(withTint: UIColor)`**](#maketransparentwithtint-uicolor--white) | Method | 8+ | 9+ | - | - |
 
+
 --
+
 
 ## `popViewController(completion: (()->Void)? = nil)`
 Pop ViewController with completion handler.
@@ -24,8 +27,8 @@ Example
 ```swift
 let navigationController = UINavigationController()
 navigationController.popViewController()
-navigationController.popViewController() { 
-    print("Completion: The view controller has been popped") 
+navigationController.popViewController() {
+    print("Completion: The view controller has been popped")
 }
 ```
 
@@ -48,8 +51,8 @@ Example
 let navigationController = UINavigationController()
 let viewController = UIViewController()
 navigationController.pushViewController(viewController)
-navigationController.pushViewController(viewController) { 
-    print("Completion: The view controller has been pushed") 
+navigationController.pushViewController(viewController) {
+    print("Completion: The view controller has been pushed")
 }
 ```
 

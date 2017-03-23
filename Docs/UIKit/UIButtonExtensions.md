@@ -1,6 +1,7 @@
 # UIButton Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`imageForDisabled`**](#imagefordisabled) | Property | 8+ | 9+ | - | - |

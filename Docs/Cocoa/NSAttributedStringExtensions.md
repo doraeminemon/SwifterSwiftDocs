@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`bolded`**](#bolded) | Read-Only Property | 8+ | - | - | 10.10+ |
@@ -65,7 +66,7 @@ Add color to string.
  - **return type**: NSAttributedString
  - **parameters**:
   - **color**: text color (NSColor for mac, and UI color for other operating systems).
- - **returns**: a NSAttributedString versions of string colored with given color. 
+ - **returns**: a NSAttributedString versions of string colored with given color.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 

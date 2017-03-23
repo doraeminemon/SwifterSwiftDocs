@@ -1,13 +1,16 @@
 # UITextView Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`clear()`**](#clear) | Method | 8+ | 9+ | - | - |
 | [**`scrollToBottom()`**](#scrolltobottom) | Method | 8+ | 9+ | - | - |
 | [**`scrollToTop()`**](#scrolltotop) | Method | 8+ | 9+ | - | - |
 
+
 --
+
 
 # `clear()`
 Clear text.

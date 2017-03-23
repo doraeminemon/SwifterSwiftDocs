@@ -1,6 +1,7 @@
 # UITableView Extensions
 
 ### Properties:
+
 |Name | Description |
 |:--- | :--- |
 |**indexPathForLastRow**| Index path of last row in table. |
@@ -9,6 +10,7 @@
 
 
 ### Methods:
+
 |Name | Return | Description |
 |:--- | :--- | :--- |
 |**indexPathForLastRow(inSection section: Int)**| IndexPath? | IndexPath for last row in section. |

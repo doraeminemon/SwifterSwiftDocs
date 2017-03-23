@@ -2,6 +2,7 @@
 
 
 ### Properties:
+
 |Name | Description |
 |:--- | :--- |
 |**appDisplayName**| App's name (if applicable). |
@@ -33,7 +34,9 @@
 |**systemVersion**| System current version (read-only). |
 |**userDefaults**| Shared instance of standard UserDefaults (read-only). |
 
+
 ### Methods:
+
 |Name | Return | Description |
 |:--- | :--- | :--- |
 |**delay(milliseconds: Double, queue: DispatchQueue = .main, completion: @escaping ()-> Void)**| -- | Delay function or closure call. |

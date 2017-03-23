@@ -2,10 +2,12 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`appendingQueryParameters(_ parameters: [String: String])`**](#appendingqueryparameters_-parameters-string-string) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`appendQueryParameters(_ parameters: [String: String])`**](#appendqueryparameters_-parameters-string-string) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+
 
 --
 

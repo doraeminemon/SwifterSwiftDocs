@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`int`**](#int) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -9,7 +10,9 @@
 | [**`toggled`**](#int) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`toggle()`**](#toggle) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 
+
 --
+
 
 ## `int`
 Return 1 if true, or 0 if false.
