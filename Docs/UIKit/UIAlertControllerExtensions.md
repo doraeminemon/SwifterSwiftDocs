@@ -1,6 +1,7 @@
 # UIAlertController Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`show(animated: Bool, vibrate: Bool, completion: (() -> Void)?)`**](#showanimated-bool--true-vibrate-bool--false-completion----void--nil) | Method | 8+ | - | - | - |
