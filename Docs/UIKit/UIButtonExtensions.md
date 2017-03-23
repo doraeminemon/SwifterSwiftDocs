@@ -1,6 +1,7 @@
 # UIButton Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`imageForDisabled`**](#imagefordisabled) | Property | 8+ | 9+ | - | - |
@@ -19,7 +20,9 @@
 | [**`setTitleColorForAllStates(_ color: UIColor)`**](#settitlecolorforallstates_-color-uicolor) | Method | 8+ | 9+ | - | - |
 | [**`setTitleForAllStates(_ title: String)`**](#settitleforallstates_-title-string) | Method | 8+ | 9+ | - | - |
 
---
+
+---
+
 
 ## `imageForDisabled`
 Image of disabled state for button; also inspectable from Storyboard.
@@ -37,7 +40,9 @@ let imageForDisabled = button.imageForDisabled
 button.imageForDisabled = UIImage()
 ```
 
---
+
+---
+
 
 ## `imageForHighlighted`
 Image of highlighted state for button; also inspectable from Storyboard.
@@ -55,7 +60,9 @@ let imageForHighlighted = button.imageForHighlighted
 button.imageForHighlighted = UIImage()
 ```
 
---
+
+---
+
 
 ## `imageForNormal`
 Image of normal state for button; also inspectable from Storyboard.
@@ -73,7 +80,9 @@ let imageForNormal = button.imageForNormal
 button.imageForNormal = UIImage()
 ```
 
---
+
+---
+
 
 ## `imageForSelected`
 Image of selected state for button; also inspectable from Storyboard.
@@ -91,7 +100,9 @@ let imageForSelected = button.imageForSelected
 button.imageForSelected = UIImage()
 ```
 
---
+
+---
+
 
 ## `titleColorForDisabled`
 Title color of disabled state for button; also inspectable from Storyboard.
@@ -109,7 +120,9 @@ let titleColorForDisabled = button.titleColorForDisabled
 button.titleColorForDisabled = .blue
 ```
 
---
+
+---
+
 
 ## `titleColorForHighlighted`
 Title color of highlighted state for button; also inspectable from Storyboard.
@@ -127,7 +140,8 @@ let titleColorForHighlighted = button.titleColorForHighlighted
 button.titleColorForHighlighted = .blue
 ```
 
---
+---
+
 
 ## `titleColorForNormal`
 Title color of normal state for button; also inspectable from Storyboard.
@@ -145,7 +159,9 @@ let titleColorForNormal = button.titleColorForNormal
 button.titleColorForNormal = .blue
 ```
 
---
+
+---
+
 
 ## `titleColorForSelected`
 Title color of selected state for button; also inspectable from Storyboard.
@@ -163,7 +179,9 @@ let titleColorForSelected = button.titleColorForSelected
 button.titleColorForSelected = .blue
 ```
 
---
+
+---
+
 
 ## `titleForDisabled`
 Title of disabled state for button; also inspectable from Storyboard.
@@ -181,7 +199,9 @@ let titleForDisabled = button.titleForDisabled
 button.titleColorForDisabled = "New Title"
 ```
 
---
+
+---
+
 
 ## `titleForHighlighted`
 Title of highlighted state for button; also inspectable from Storyboard.
@@ -199,7 +219,9 @@ let titleForHighlighted = button.titleForHighlighted
 button.titleForHighlighted = "New Title"
 ```
 
---
+
+---
+
 
 ## `titleForNormal`
 Title of normal state for button; also inspectable from Storyboard.
@@ -217,7 +239,9 @@ let titleForNormal = button.titleForNormal
 button.titleForNormal = "New Title"
 ```
 
---
+
+---
+
 
 ## `titleForSelected`
 Title of selected state for button; also inspectable from Storyboard.
@@ -235,7 +259,9 @@ let titleForSelected = button.titleForSelected
 button.titleForSelected = "New Title"
 ```
 
---
+
+---
+
 
 ## `setImageForAllStates(_ image: UIImage)`
 Set image for all states.
@@ -255,7 +281,9 @@ let image = UIImage()
 button.setImageForAllStates(image)
 ```
 
---
+
+---
+
 
 ## `setTitleColorForAllStates(_ color: UIColor)`
 Set title color for all states.
@@ -274,7 +302,9 @@ let button = UIButton()
 button.setTitleColorForAllStates(.green)
 ```
 
---
+
+---
+
 
 ## `setTitleForAllStates(_ title: String)`
 Set title for all states.
@@ -292,3 +322,6 @@ Example
 let button = UIButton()
 button.setTitleForAllStates("SwifterSwift")
 ```
+
+
+---

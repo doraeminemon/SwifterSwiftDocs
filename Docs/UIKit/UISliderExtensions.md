@@ -1,11 +1,14 @@
 # UISlider Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`setValue(_ value: Float, animated: Bool, duration: TimeInterval, completion: (() -> Void)?)`**](#setvalue_-value-float-animated-bool--true-duration-timeinterval--1-completion----void--nil) | Method | 8+ | - | - | - |
 
---
+
+---
+
 
 ## `setValue(_ value: Float, animated: Bool = true, duration: TimeInterval = 1, completion: (() -> Void)? = nil)`
 Set slide bar value with completion handler.
@@ -29,3 +32,5 @@ slider.maximumValue = 100
 slider.setValue(99)
 slider.setValue(17, animated: false, duration: 2)
 ```
+
+---

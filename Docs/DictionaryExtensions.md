@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`has(key: Key)`**](#haskey-key) | Method | 8+ | 9+ | 3+ | 10.10+ |
@@ -10,7 +11,7 @@
 | [**`lowercaseAllKeys()`**](#lowercaseallkeys) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `has(key: Key)`
@@ -32,7 +33,7 @@ dict.has(key: "anotherKey") -> false
 ```
 
 
---
+---
 
 
 ## `jsonData(prettify: Bool = false)`
@@ -46,7 +47,7 @@ JSON Data from dictionary.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `jsonString(prettify: Bool = false)`
@@ -83,7 +84,7 @@ returns the following string:
 ```
 
 
---
+---
 
 
 ## `lowercaseAllKeys()`
@@ -101,4 +102,4 @@ print(dict) // prints "["testkey": "value"]"
 ```
 
 
---
+---

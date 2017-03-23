@@ -1,6 +1,7 @@
 # Int Extensions
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`abs`**](#abs) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -23,7 +24,7 @@
 | [**`±`**](#prefix-operator--1) | Prefix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `abs`
@@ -41,7 +42,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `asLocaleCurrency`
@@ -58,7 +59,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `degreesToRadians`
@@ -76,7 +77,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `digits`
@@ -93,7 +94,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `digitsCount`
@@ -110,7 +111,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `isEven`
@@ -128,7 +129,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `isOdd`
@@ -146,7 +147,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `radiansToDegrees`
@@ -163,7 +164,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `romanNumeral`
@@ -181,7 +182,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `timeString`
@@ -200,7 +201,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `kFormatted`
@@ -219,7 +220,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `gcd(of n: Int)`
@@ -239,7 +240,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `lcm(of n: Int)`
@@ -259,7 +260,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `randomBetween(min: Int, max: Int)`
@@ -280,7 +281,7 @@ Int.randomBetween(min: 5, max: 25) -> 20
 ```
 
 
---
+---
 
 
 ## `Infix Operator **`
@@ -298,7 +299,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Prefix Operator √`
@@ -315,7 +316,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Infix Operator ±`
@@ -332,7 +333,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Prefix Operator ±`
@@ -347,3 +348,6 @@ Example
 ```swift
 ± 2 -> (-2, 2)
 ```
+
+
+---

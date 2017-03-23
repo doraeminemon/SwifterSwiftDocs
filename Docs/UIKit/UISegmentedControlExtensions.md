@@ -1,12 +1,15 @@
 # UISegmentedControl Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`segmentTitles`**](#segmenttitles) | Property | 8+ | 9+ | - | - |
 | [**`segmentImages`**](#segmentimages) | Property | 8+ | 9+ | - | - |
 
---
+
+---
+
 
 ## `segmentTitles`
 Segments titles.
@@ -24,7 +27,9 @@ let titles = segmentedControl.segmentTitles
 segmentedControl.segmentTitles = ["Swifter", "Swift"]
 ```
 
---
+
+---
+
 
 ## `segmentImages`
 Segments images.
@@ -41,3 +46,6 @@ let segmentedControl = UISegmentedControl()
 let images = segmentedControl.segmentImages
 segmentedControl.segmentImages = [UIImage(), UIImage()]
 ```
+
+
+---

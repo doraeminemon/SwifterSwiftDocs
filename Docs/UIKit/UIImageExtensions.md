@@ -1,6 +1,7 @@
 # UIImage Extensions
 
 ### Properties:
+
 |Name | Description |
 |:--- | :--- |
 |**bytesSize**| Size in bytes of UIImage |
@@ -8,6 +9,7 @@
 
 
 ### Methods:
+
 |Name | Return | Description |
 |:--- | :--- | :--- |
 |**compressed(quality: CGFloat = 0.5)**| UIImage? | Compressed UIImage from original UIImage. |
@@ -19,6 +21,7 @@
 
 
 ### Initializers:
+
 |Name | Description |
 |:--- | :--- |
 |**init(color: UIColor, size: CGSize)**| Create UIImage from color and size. |

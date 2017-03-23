@@ -1,6 +1,7 @@
 # UITextField Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`isEmpty`**](#isempty) | Read-Only Property | 8+ | 9+ | - | - |
@@ -10,7 +11,9 @@
 | [**`clear()`**](#clear) | Method | 8+ | 9+ | - | - |
 | [**`setPlaceHolderTextColor(_ color: UIColor)`**](#setplaceholdertextcolor_-color-uicolor) | Method | 8+ | 9+ | - | - |
 
---
+
+---
+
 
 # `isEmpty`
 Check if text field is empty.
@@ -27,7 +30,9 @@ let textField = UITextField()
 let bool = textField.isEmpty
 ```
 
---
+
+---
+
 
 # `trimmedText`
 Return text with no spaces or new lines in beginning and end.
@@ -44,7 +49,9 @@ let textField = UITextField()
 let output = textField.trimmedText
 ```
 
---
+
+---
+
 
 # `leftViewTintColor`
 Left view tint color.
@@ -62,7 +69,9 @@ let currentColor = textField.leftViewTintColor
 textField.leftViewTintColor = .red
 ```
 
---
+
+---
+
 
 # `rightViewTintColor`
 Right view tint color.
@@ -80,7 +89,9 @@ let currentColor = textField.rightViewTintColor
 textField.rightViewTintColor = .red
 ```
 
---
+
+---
+
 
 # `clear`
 Clear text.
@@ -97,7 +108,9 @@ let textField = UITextField()
 textField.clear()
 ```
 
---
+
+---
+
 
 # `setPlaceHolderTextColor(_ color: UIColor)`
 Set placeholder text color.
@@ -115,3 +128,5 @@ Example
 let textField = UITextField()
 textField.setPlaceHolderTextColor(.green)
 ```
+
+---

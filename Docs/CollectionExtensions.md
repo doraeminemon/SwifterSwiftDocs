@@ -2,13 +2,14 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`forEachInParallel(_ each: (Self.Iterator.Element) -> ())`**](#foreachinparallel_-each-selfiteratorelement---) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`subscript (safe index: Index)`**](#subscript-safe-index-index) | Method | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `forEachInParallel(_ each: (Self.Iterator.Element) -> ())`
@@ -28,7 +29,7 @@ array.forEachInParallel { item in
 ```
 
 
---
+---
 
 
 ## `subscript (safe index: Index)`
@@ -50,4 +51,4 @@ arr[safe: 10] -> nil
 ```
 
 
---
+---

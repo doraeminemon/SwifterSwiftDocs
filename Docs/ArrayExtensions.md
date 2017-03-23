@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`average`**](#average) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -22,7 +23,7 @@
 | [**`shuffle()`**](#shuffle) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `average`
@@ -40,7 +41,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `randomItem`
@@ -60,7 +61,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `shuffled`
@@ -78,7 +79,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `sum`
@@ -96,7 +97,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `withoutDuplicates`
@@ -115,7 +116,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `contains(_ elements: [Element])`
@@ -138,7 +139,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `firstIndex <Item: Equatable> (of item: Item)`
@@ -161,7 +162,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `indexes(of item: Element)`
@@ -184,7 +185,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `item(at index: Int)`
@@ -207,7 +208,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `lastIndex <Item: Equatable> (of item: Item)`
@@ -230,7 +231,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `pop()`
@@ -250,7 +251,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `prepend(_ newElement: Element)`
@@ -270,7 +271,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `push(_ newElement: Element)`
@@ -290,7 +291,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `removeAll(_ item: Element)`
@@ -310,7 +311,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `removeDuplicates()`
@@ -328,7 +329,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `shuffle()`
@@ -344,3 +345,5 @@ Example
 // It also works for all other types!
 ```
 
+
+---

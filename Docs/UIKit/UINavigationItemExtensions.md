@@ -1,11 +1,14 @@
 # UINavigationItem Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`replaceTitle(with image: UIImage)`**](#replacetitlewith-image-uiimage) | Method | 8+ | 9+ | - | - |
 
---
+
+---
+
 
 ## `replaceTitle(with image: UIImage)`
 Replace title label with an image in navigation item.
@@ -24,3 +27,5 @@ let navigationItem = UINavigationItem()
 let image = UIImage()
 navigationItem.replaceTitle(with: image)
 ```
+
+---

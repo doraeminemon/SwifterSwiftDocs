@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`abs`**](#abs) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -17,7 +18,7 @@
 | [**`±`**](#operator--2) | Prefix/Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `abs`
@@ -35,7 +36,7 @@ Double(-12.12) -> 12.12
 ```
 
 
---
+---
 
 
 ## `asLocaleCurrency`
@@ -53,7 +54,7 @@ Double(10).asLocaleCurrency ->"$10.00"
 ```
 
 
---
+---
 
 
 ## `ceil`
@@ -72,7 +73,7 @@ Double(10).ceil -> 10
 ```
 
 
---
+---
 
 
 
@@ -90,7 +91,7 @@ Double(180).degreesToRadians -> M_PI
 ```
 
 
---
+---
 
 
 ## `floor`
@@ -109,7 +110,7 @@ Double(10).floor -> 10
 ```
 
 
---
+---
 
 
 ## `radiansToDegrees`
@@ -126,7 +127,7 @@ M_PI.radiansToDegrees -> 180.0
 ```
 
 
---
+---
 
 
 ## `randomBetween(min: Double, max: Double)`
@@ -137,7 +138,7 @@ Converts string format to CamelCase.
  - **parameters**:
  	- **min**: minimum number to start random from.
  	- **max**: maximum number random number end before.
- - **returns**: random double between two double values. 
+ - **returns**: random double between two double values.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 Example
@@ -147,7 +148,7 @@ Double.randomBetween(min: 1, max: 10) -> random double number between 1 and 10
 ```
 
 
---
+---
 
 
 ## `Operator **`
@@ -169,7 +170,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Operator √`
@@ -189,7 +190,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Operator ±`
@@ -206,3 +207,5 @@ Example
 ± 2.0 -> (2.0, -2.0)
 ```
 
+
+---

@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`bolded`**](#bolded) | Read-Only Property | 8+ | - | - | 10.10+ |
@@ -12,7 +13,7 @@
 | [**`+=`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `bolded`
@@ -23,7 +24,7 @@ Bolded string.
  - **availability**: `iOS 8+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `underlined`
@@ -34,6 +35,8 @@ Underlined string.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
+---
+
 
 ## `italicized`
 Italicized string.
@@ -43,8 +46,7 @@ Italicized string.
  - **availability**: `iOS 8+`.
 
 
---
-
+---
 
 
 ## `struckthrough`
@@ -55,7 +57,7 @@ Struckthrough string.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `colored(with color: UIColor/NSColor)`
@@ -65,11 +67,12 @@ Add color to string.
  - **return type**: NSAttributedString
  - **parameters**:
   - **color**: text color (NSColor for mac, and UI color for other operating systems).
- - **returns**: a NSAttributedString versions of string colored with given color. 
+ - **returns**: a NSAttributedString versions of string colored with given color.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
+
 
 ## `Operator +=`
 Add a NSAttributedString to another NSAttributedString.
@@ -79,4 +82,4 @@ Add a NSAttributedString to another NSAttributedString.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---

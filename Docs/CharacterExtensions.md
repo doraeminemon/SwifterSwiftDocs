@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`isEmoji`**](#isemoji) | Read-Only Property | 8+ | 9+ | 3+ |  10.10+ |
@@ -12,7 +13,9 @@
 | [**`string`**](#string) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
 | [**`*`**](#operator-) | Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
---
+
+---
+
 
 ## `isEmoji`
 Check if character is emoji.
@@ -27,7 +30,9 @@ Example
 '😀'.isEmoji -> true
 ```
 
---
+
+---
+
 
 ## `isNumber`
 Check if character is number.
@@ -42,7 +47,9 @@ Example
 '3'.isNumber -> true
 ```
 
---
+
+---
+
 
 ## `isUppercased`
 Check if character is uppercased.
@@ -58,7 +65,9 @@ Example
 'c'.isUppercased -> false
 ```
 
---
+
+---
+
 
 ## `isLowercased`
 Check if character is lowercased.
@@ -74,7 +83,9 @@ Example
 'C'.isLowercased -> false
 ```
 
---
+
+---
+
 
 ## `int`
 Integer from character (if applicable).
@@ -90,7 +101,9 @@ Example
 'a'.int -> nil
 ```
 
---
+
+---
+
 
 ## `string`
 String from character.
@@ -105,7 +118,9 @@ Example
 'c'.string -> "c"
 ```
 
---
+
+---
+
 
 ## `Operator *`
 Repeat character multiple times.
@@ -121,3 +136,5 @@ Example
 '-' * 10 -> "----------"
 15 * 'a' -> "aaaaaaaaaaaaaaa"
 ```
+
+---

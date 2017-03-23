@@ -10,7 +10,8 @@
 | [**`init(title: String, message: String?, defaultActionButtonTitle: String, tintColor: UIColor?)`**](#inittitle-string-message-string--nil-defaultactionbuttontitle-string--ok-tintcolor-uicolor--nil) | Initializer | 8+ | - | - | - |
 | [**`init(title: String, error: Error, defaultActionButtonTitle: String, tintColor: UIColor?)`**](#inittitle-string--error-error-error-defaultactionbuttontitle-string--ok-tintcolor-uicolor--nil) | Initializer | 8+ | - | - | - |
 
---
+
+---
 
 
 ## `show(animated: Bool = true, vibrate: Bool = false, completion: (() -> Void)? = nil)`
@@ -33,7 +34,8 @@ UIAlertController().show(animated: true, vibrate: false, completion: nil)
 ```
 
 
---
+---
+
 
 ## `addAction(title: String, style: UIAlertActionStyle = .default, isEnabled: Bool = true, handler: ((UIAlertAction) -> Void)? = nil)`
 Add an action to Alert
@@ -56,7 +58,9 @@ let alertActionDefault = UIAlertController().addAction(title: "Title")
 let alertAction = UIAlertController().addAction(title: "Title", style: .default, isEnabled: true, handler: nil)
 ```
 
---
+
+---
+
 
 ## `addTextField(text: String? = nil, placeholder: String? = nil, editingChangedTarget: Any?, editingChangedSelector: Selector?)`
 Add a text field to Alert
@@ -79,7 +83,9 @@ UIAlertController().addTextField(editingChangedTarget: nil, editingChangedSelect
 UIAlertController().addTextField(text: "Text", placeHolder: "PlaceHolder", editingChangedTarget: nil, editingChangedSelector: nil)
 ```
 
---
+
+---
+
 
 ## `init(title: String, message: String? = nil, defaultActionButtonTitle: String = "OK", tintColor: UIColor? = nil)`
 Create new alert view controller with default OK action.
@@ -102,7 +108,9 @@ let alertDefault = UIAlertController(title: "Title")
 let alert = UIAlertController(title: "Title", message: "Message", defaultActionButtleTitle: "No", tintColor: .black)
 ```
 
---
+
+---
+
 
 ## `init(title: String = "Error", error: Error, defaultActionButtonTitle: String = "OK", tintColor: UIColor? = nil)`
 Create new error alert view controller from Error with default OK action.
@@ -125,5 +133,5 @@ let alertDefault = UIAlertController(error: Error())
 let alert = UIAlertController(title: "Title", error: Error(), defaultActionButtonTitle: "Ok", tintColor: .green)
 ```
 
---
 
+---

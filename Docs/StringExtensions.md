@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`base64Decoded`**](#base64decoded) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -81,7 +82,7 @@
 | [**`appendingPathExtension(_ str: String)`**](#appendingpathextension_-str-string) | Method | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `base64Decoded`
@@ -98,7 +99,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `base64Encoded`
@@ -115,7 +116,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `camelCased`
@@ -132,7 +133,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `containEmoji`
@@ -149,7 +150,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `firstCharacter`
@@ -166,7 +167,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `hasLetters`
@@ -184,7 +185,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `hasNumbers`
@@ -202,7 +203,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `isAlphabetic`
@@ -220,7 +221,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `isAlphaNumeric`
@@ -239,7 +240,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `isEmail`
@@ -256,7 +257,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `isValidUrl`
@@ -273,7 +274,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `isValidHttpsUrl`
@@ -325,7 +326,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `isNumeric`
@@ -343,7 +344,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `lastCharacter`
@@ -360,7 +361,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `latinized`
@@ -377,7 +378,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `length`
@@ -393,7 +394,8 @@ Example
 "Hello world!".length -> 12
 ```
 
---
+
+---
 
 
 ## `lines`
@@ -410,7 +412,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `mostCommonCharacter`
@@ -427,7 +429,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `reversed`
@@ -444,7 +446,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `bool`
@@ -463,7 +465,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `date`
@@ -480,7 +482,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `dateTime`
@@ -497,7 +499,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `double`
@@ -514,7 +516,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `float`
@@ -531,7 +533,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `float32`
@@ -548,7 +550,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `float64`
@@ -565,7 +567,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `int`
@@ -582,7 +584,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `int16`
@@ -599,7 +601,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `int32`
@@ -616,7 +618,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `int64`
@@ -633,7 +635,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `int8`
@@ -650,7 +652,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `url`
@@ -668,7 +670,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `trimmed`
@@ -685,7 +687,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `unicodeArray`
@@ -702,7 +704,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `urlDecoded`
@@ -719,7 +721,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `urlEncoded`
@@ -736,7 +738,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `withoutSpacesAndNewLines`
@@ -753,7 +755,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `subscript(i: Int)`
@@ -773,7 +775,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `subscript(range: CountableRange<Int>)`
@@ -793,7 +795,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `subscript(range: ClosedRange<Int>)`
@@ -813,7 +815,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `copyToPasteboard()`
@@ -829,7 +831,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `camelize()`
@@ -847,7 +849,7 @@ print(str) // prints "someVariableName"
 ```
 
 
---
+---
 
 
 ## `contain(_ string: String, caseSensitive: Bool = true)`
@@ -858,7 +860,7 @@ Check if string contains one or more instance of substring.
  - **parameters**:
   - **string**: substring to search for.
   - **caseSensitive**: set true for case sensitive search (default is true).
- - **returns**: true if string contains one or more instance of substring. 
+ - **returns**: true if string contains one or more instance of substring.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 Example
@@ -869,7 +871,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `count(of string: String, caseSensitive: Bool = true)`
@@ -891,7 +893,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `end(with suffix: String, caseSensitive: Bool = true)`
@@ -913,7 +915,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `firstIndex(of string: String)`
@@ -934,7 +936,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `latinize()`
@@ -952,7 +954,7 @@ print(str) // prints "Hello World!"
 ```
 
 
---
+---
 
 
 ## `random(ofLength: Int)`
@@ -972,7 +974,7 @@ String.random(ofLength: 18) -> "u7MMZYvGo9obcOcPj8"
 ```
 
 
---
+---
 
 
 ## `replacing(_ substring: String, with newString: String)`
@@ -993,7 +995,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `reverse()`
@@ -1011,7 +1013,7 @@ print(str) // prints "!dlroW olleH"
 ```
 
 
---
+---
 
 
 ## `slicing(from i: Int, length: Int)`
@@ -1032,7 +1034,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `slice(from i: Int, length: Int)`
@@ -1053,7 +1055,7 @@ print(str) // prints "World"
 ```
 
 
---
+---
 
 
 ## `slicing(from start: Int, to end: Int)`
@@ -1074,7 +1076,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `slice(from start: Int, to end: Int)`
@@ -1095,7 +1097,7 @@ print(str) // prints "World"
 ```
 
 
---
+---
 
 
 ## `slicing(at i: Int)`
@@ -1115,7 +1117,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `slice(at i: Int)`
@@ -1135,7 +1137,7 @@ print(str) // prints "World"
 ```
 
 
---
+---
 
 
 ## `splitted(by separator: Character)`
@@ -1155,7 +1157,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `start(with prefix: String, caseSensitive: Bool = true)`
@@ -1177,7 +1179,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `date(withFormat format: String)`
@@ -1198,7 +1200,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `trim()`
@@ -1216,7 +1218,7 @@ print(str) // prints "Hello World"
 ```
 
 
---
+---
 
 
 ## `truncate(toLength: Int, trailing: String? = "...")`
@@ -1237,7 +1239,7 @@ print(str) // prints "This is a very..."
 ```
 
 
---
+---
 
 
 ## `truncated(toLength: Int, trailing: String? = "...")`
@@ -1260,7 +1262,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `urlDecode()`
@@ -1278,7 +1280,7 @@ print(str) // prints "it's easy to decode strings"
 ```
 
 
---
+---
 
 
 ## `urlEncode()`
@@ -1296,7 +1298,7 @@ print(str) // prints "it's%20easy%20to%20encode%20strings"
 ```
 
 
---
+---
 
 
 ## `Operator *`
@@ -1314,7 +1316,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `init(randomOfLength length: Int)`
@@ -1333,7 +1335,7 @@ String(randomOfLength: 10) -> "gY8r3MHvlQ"
 ```
 
 
---
+---
 
 
 ## `init?(base64: String)`
@@ -1353,7 +1355,7 @@ String(base64: "hello") = nil
 ```
 
 
---
+---
 
 
 ## `nsString`
@@ -1364,7 +1366,7 @@ NSString from a string.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `lastPathComponent`
@@ -1375,7 +1377,7 @@ NSString lastPathComponent.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `pathExtension`
@@ -1386,7 +1388,7 @@ NSString pathExtension.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `deletingLastPathComponent`
@@ -1397,7 +1399,7 @@ NSString deletingLastPathComponent.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `deletingPathExtension`
@@ -1408,7 +1410,7 @@ NSString deletingPathExtension.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `pathComponents`
@@ -1419,7 +1421,7 @@ NSString pathComponents.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `appendingPathComponent(_ str: String)`
@@ -1433,7 +1435,7 @@ NSString appendingPathComponent(str: String)
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `appendingPathExtension(_ str: String)`
@@ -1446,4 +1448,5 @@ NSString appendingPathExtension(str: String).
  - **returns**: a new string made by appending to the receiver an extension separator followed by ext (if applicable).
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
---
+
+---

@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`abs`**](#abs) | Read-Only Property | 8+ | 9+ | 3+ | 10.10+ |
@@ -16,7 +17,7 @@
 | [**`±`**](#operator--2) | Prefix/Infix Operator | 8+ | 9+ | 3+ | 10.10+ |
 
 
---
+---
 
 
 ## `abs`
@@ -34,7 +35,7 @@ Float(-12.12) -> 12.12
 ```
 
 
---
+---
 
 
 ## `asLocaleCurrency`
@@ -52,7 +53,7 @@ Float(10).asLocaleCurrency ->"$10.00"
 ```
 
 
---
+---
 
 
 ## `ceil`
@@ -71,8 +72,7 @@ Float(10).ceil -> 10
 ```
 
 
---
-
+---
 
 
 ## `degreesToRadians`
@@ -89,7 +89,7 @@ Float(180).degreesToRadians -> M_PI
 ```
 
 
---
+---
 
 
 ## `floor`
@@ -108,7 +108,7 @@ Float(10).floor -> 10
 ```
 
 
---
+---
 
 
 ## `radiansToDegrees`
@@ -125,7 +125,7 @@ M_PI.radiansToDegrees -> 180.0
 ```
 
 
---
+---
 
 
 ## `randomBetween(min: Float, max: Float)`
@@ -136,7 +136,7 @@ Converts string format to CamelCase.
  - **parameters**:
  	- **min**: minimum number to start random from.
  	- **max**: maximum number random number end before.
- - **returns**: random Float between two Float values. 
+ - **returns**: random Float between two Float values.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 Example
@@ -147,7 +147,7 @@ Float.randomBetween(min: 1, max: 10) -> random float number between 1 and 10
 ```
 
 
---
+---
 
 
 ## `Operator **`
@@ -169,7 +169,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Operator √`
@@ -189,7 +189,7 @@ Example
 ```
 
 
---
+---
 
 
 ## `Operator ±`
@@ -206,3 +206,5 @@ Example
 ± 2.0 -> (2.0, -2.0)
 ```
 
+
+---

@@ -1,11 +1,14 @@
 # UISwitch Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`toggle(animated: Bool)`**](#toggleanimated-bool--true) | Method | 8+ | - | - | - |
 
---
+
+---
+
 
 # `toggle(animated: Bool = true)`
 Toggle a UISwitch
@@ -24,3 +27,6 @@ let switch = UISwitch()
 switch.toggle()
 switch.toggle(animated: false)
 ```
+
+
+---

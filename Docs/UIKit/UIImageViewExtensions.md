@@ -1,13 +1,16 @@
 # UIImageView Extensions
 
-##Table of Contents
+## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`download(from url: URL, contentMode: UIViewContentMode, placeholder: UIImage?, completionHandler: ((UIImage?) -> Void)?)`**](#downloadfrom-url-url-contentmode-uiviewcontentmode--scaleaspectfit-placeholder-uiimage--nil-completionhandler-uiimage---void--nil) | Method | 8+ | 9+ | - | - |
 | [**`blur(withStyle style: UIBlurEffectStyle)`**](#blurwithstyle-style-uiblureffectstyle--light) | Method | 8+ | 9+ | - | - |
 | [**`blurred(withStyle style: UIBlurEffectStyle)`**](#blurredwithstyle-style-uiblureffectstyle--light) | Method | 8+ | 9+ | - | - |
 
---
+
+---
+
 
 # `download(from url: URL, contentMode: UIViewContentMode = .scaleAspectFit, placeholder: UIImage? = nil, completionHandler: ((UIImage?) -> Void)? = nil)`
 Set image from a URL.
@@ -34,7 +37,9 @@ imageView.download(from: url, contentMode: .scaleAspectFill, placeholder: placeh
 }
 ```
 
---
+
+---
+
 
 # `blur(withStyle style: UIBlurEffectStyle = .light)`
 Make image view blurry.
@@ -54,7 +59,9 @@ imageView.blur()
 imageView.blur(withStyle: .dark)
 ```
 
---
+
+---
+
 
 # `blurred(withStyle style: UIBlurEffectStyle = .light)`
 Blurred version of an image view.
@@ -72,3 +79,5 @@ let imageView = UIImageView()
 let blurredImageView = imageView.blurred()
 let darkBlurred = imageView.blur(withStyle: .dark)
 ```
+
+---

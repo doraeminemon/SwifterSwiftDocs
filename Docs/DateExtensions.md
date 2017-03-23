@@ -2,6 +2,7 @@
 
 
 ## Table of Contents
+
 | Name | Type | iOS | tvOS | watchOS | macOS |
 |:--- | :--- | :---: | :---: | :---: | :---: |
 | [**`DayNameStyle`**](#daynamestyle) | Enum | 8+ | 9+ | 3+ | 10.10+ |
@@ -47,7 +48,8 @@
 | [**`init?(iso8601String: String)`**](#initiso8601string-string) | Optional Initializer  | 8+ | 9+ | 3+ | 10.10+ |
 | [**`init(unixTimestamp: Double)`**](#initunixtimestamp-double) | Initializer  | 8+ | 9+ | 3+ | 10.10+ |
 
---
+
+---
 
 
 ## `DayNameStyle `
@@ -61,7 +63,7 @@ Day name format.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `MonthNameStyle `
@@ -75,7 +77,7 @@ Day name format.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `calendar`
@@ -86,7 +88,7 @@ User’s current calendar.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `era`
@@ -104,7 +106,7 @@ Date().era -> 1
 ```
 
 
---
+---
 
 
 ## `year`
@@ -126,7 +128,7 @@ someDate.year = 2000 // sets someDate's year to 2000
 ```
 
 
---
+---
 
 
 ## `quarter`
@@ -137,7 +139,7 @@ Quarter.
  - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
 
 
---
+---
 
 
 ## `month`
@@ -159,7 +161,7 @@ someDate.year = 10 // sets someDate's month to 10.
 ```
 
 
---
+---
 
 
 ## `weekOfYear`
@@ -177,7 +179,7 @@ Date().weekOfYear -> 2 // second week in the current year.
 ```
 
 
---
+---
 
 
 ## `weekOfMonth`
@@ -195,7 +197,7 @@ Date().weekOfMonth -> 2 // second week in the current month.
 ```
 
 
---
+---
 
 
 ## `weekday`
@@ -213,7 +215,7 @@ Date().weekOfMonth -> 5 // fifth day in the current week.
 ```
 
 
---
+---
 
 
 ## `day`
@@ -235,7 +237,7 @@ someDate.day = 1 // sets someDate's day of month to 1.
 ```
 
 
---
+---
 
 
 ## `hour`
@@ -257,7 +259,7 @@ someDate.day = 13 // sets someDate's hour to 1 pm.
 ```
 
 
---
+---
 
 
 ## `minute`
@@ -279,7 +281,7 @@ someDate.minute = 10 // sets someDate's minutes to 10.
 ```
 
 
---
+---
 
 
 ## `second`
@@ -301,7 +303,7 @@ someDate. second = 15 // sets someDate's seconds to 15.
 ```
 
 
---
+---
 
 
 ## `nanosecond`
@@ -319,7 +321,7 @@ Date().nanosecond -> 981379985
 ```
 
 
---
+---
 
 
 ## `isInFuture`
@@ -337,7 +339,7 @@ Date(timeInterval: 100, since: Date()).isInFuture -> true
 ```
 
 
---
+---
 
 
 ## `isInPast`
@@ -355,7 +357,7 @@ Date(timeInterval: -100, since: Date()).isInPast -> true
 ```
 
 
---
+---
 
 
 ## `isInToday`
@@ -373,7 +375,7 @@ Date().isInToday -> true
 ```
 
 
---
+---
 
 
 ## `isInYesterday`
@@ -391,7 +393,7 @@ Date().isInYesterday -> false
 ```
 
 
---
+---
 
 
 ## `isInTomorrow`
@@ -409,7 +411,7 @@ Date().isInTomorrow -> false
 ```
 
 
---
+---
 
 
 ## `iso8601String`
@@ -427,7 +429,7 @@ Date().iso8601String -> "2017-01-12T14:51:29.574Z"
 ```
 
 
---
+---
 
 
 ## `nearestFiveMinutes`
@@ -450,7 +452,7 @@ date.nearestFiveMinutes // "5:45 PM"
 ```
 
 
---
+---
 
 
 ## `nearestTenMinutes`
@@ -473,7 +475,7 @@ date.nearestTenMinutes // "5:50 PM"
 ```
 
 
---
+---
 
 
 ## `nearestQuarterHour`
@@ -496,7 +498,7 @@ date.nearestQuarterHour // "5:45 PM"
 ```
 
 
---
+---
 
 
 ## `nearestHalfHour`
@@ -519,7 +521,7 @@ date.nearestHalfHour // "7:00 PM"
 ```
 
 
---
+---
 
 
 ## `nearestHour`
@@ -541,7 +543,7 @@ date.nearestHour // "7:00 PM"
 ```
 
 
---
+---
 
 
 ## `timeZone`
@@ -559,7 +561,7 @@ Date().timeZone -> Europe/Istanbul (current)
 ```
 
 
---
+---
 
 
 ## `unixTimestamp`
@@ -577,7 +579,7 @@ Date().unixTimestamp -> 1484233862.826291
 ```
 
 
---
+---
 
 
 ## `adding(_ component: Calendar.Component, value: Int)`
@@ -602,7 +604,7 @@ let date5 = date.adding(.year, value: 13) // "Jan 12, 2030, 7:07 PM"
 ```
 
 
---
+---
 
 
 ## `add(_ component: Calendar.Component, value: Int)`
@@ -626,7 +628,7 @@ date.add(.year, value: 13) // "Jan 12, 2030, 7:07 PM"
 ```
 
 
---
+---
 
 
 ## `changing(_ component: Calendar.Component, value: Int)`
@@ -651,7 +653,7 @@ let date5 = date.changing(.year, value: 2000) // "Jan 12, 2000, 7:07 PM"
 ```
 
 
---
+---
 
 
 ## `beginning(of component: Calendar.Component)`
@@ -674,7 +676,7 @@ let date4 = date.beginning(of: .year) // "Jan 1, 2017, 12:00 AM"
 ```
 
 
---
+---
 
 
 ## `end(of component: Calendar.Component)`
@@ -697,7 +699,7 @@ let date4 = date.end(of: .year) // "Dec 31, 2017, 11:59 PM"
 ```
 
 
---
+---
 
 
 ## `dateString(ofStyle style: DateFormatter.Style = .medium)`
@@ -720,7 +722,7 @@ Date().dateString(ofStyle: .full) -> "Thursday, January 12, 2017"
 ```
 
 
---
+---
 
 
 ## `dateTimeString(ofStyle style: DateFormatter.Style = .medium)`
@@ -743,7 +745,7 @@ Date().dateTimeString(ofStyle: .full) -> "Thursday, January 12, 2017 at 7:32:00 
 ```
 
 
---
+---
 
 
 ## `isInCurrent(_ component: Calendar.Component)`
@@ -764,7 +766,7 @@ Date().isInCurrent(.year) -> true
 ```
 
 
---
+---
 
 
 ## `timeString(ofStyle style: DateFormatter.Style = .medium)`
@@ -787,7 +789,7 @@ Date().timeString(ofStyle: .full) -> "7:37:02 PM GMT+03:00"
 ```
 
 
---
+---
 
 
 ## `dayName(ofStyle style: DayNameStyle = .full)`
@@ -809,7 +811,7 @@ Date().dayName(ofStyle: .full) -> "Thursday"
 ```
 
 
---
+---
 
 
 ## `monthName(ofStyle style: MonthNameStyle = .full)`
@@ -831,7 +833,7 @@ Date().monthName(ofStyle: .full) -> "January"
 ```
 
 
---
+---
 
 
 ## `init?(calendar: Calendar? = Calendar.current, timeZone: TimeZone? = TimeZone.current, era: Int? = Date().era, year: Int? = Date().year, month: Int? = Date().month, day: Int? = Date().day, hour: Int? = Date().hour, minute: Int? = Date().minute, second: Int? = Date().second, nanosecond: Int? = Date().nanosecond)`
@@ -859,7 +861,7 @@ let date = Date(year: 2010, month: 1, day: 12) // "Jan 12, 2010, 7:45 PM"
 ```
 
 
---
+---
 
 
 ## `init?(iso8601String: String)`
@@ -878,7 +880,7 @@ let date = Date(iso8601String: "2017-01-12T16:48:00.959Z") // "Jan 12, 2017, 7:4
 ```
 
 
---
+---
 
 
 ## `init(unixTimestamp: Double)`
@@ -897,4 +899,4 @@ let date = Date(unixTimestamp: 1484239783.922743) // "Jan 12, 2017, 7:49 PM"
 ```
 
 
---
+---
