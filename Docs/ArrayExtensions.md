@@ -201,9 +201,9 @@ Element at the given index if it exists.
 Example
 
 ```swift
-[1, 2, 3, 4, 5].item(at 2) -> 1
-[1.2, 2.3, 4.5, 3.4, 4.5].item(at 3) -> 3.4
-["h", "e", "l", "l", "o"].item(of 10) -> nil
+[1, 2, 3, 4, 5].item(at: 2) -> 3
+[1.2, 2.3, 4.5, 3.4, 4.5].item(at: 3) -> 3.4
+["h", "e", "l", "l", "o"].item(at: 10) -> nil
 // It also works for all other types!
 ```
 
