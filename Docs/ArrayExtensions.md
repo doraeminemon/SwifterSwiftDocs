@@ -18,6 +18,13 @@
 | [**`pop()`**](#pop) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`prepend(_ newElement: Element)`**](#prepend_-newelement-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`push(_ newElement: Element)`**](#push_-newelement-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`safeSwap(from index: Int, to otherIndex: Int)`**](#safeswapfrom-index-int-to-otherIndex-int) Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`swap(from index: Int, to otherIndex: Int)`**](#swapfrom-index-int-to-otherIndex-int) Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`firstIndex(where condition: (Element) -> Bool) -> Int?`**](#firstindexwhere-condition-element---bool---int) Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`lastIndex(where condition: (Element) -> Bool) -> Int?`**](#lastindexwhere-condition-element---bool---int) Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`indices(where condition: (Element) -> Bool) -> [Int]?`**](#indiceswhere-condition-element---bool---int) Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`all(matching condition: (Element) -> Bool) -> Bool?`**](#allmatching-condition-element---bool---bool) Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`none(matching condition: (Element) -> Bool) -> Bool?`**](#nonematching-condition-element---bool---bool) Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`removeAll(_ item: Element)`**](#removeall_-item-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`removeDuplicates()`**](#removeduplicates) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`shuffle()`**](#shuffle) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
@@ -290,6 +297,149 @@ Example
 // It also works for all other types!
 ```
 
+
+---
+
+
+## `safeSwap(from index: Int, to otherIndex: Int)`
+Safely Swap values at index positions.
+
+ - **type**: Method.
+ - **parameters**:
+  - **index**: index of first element.
+  - **otherIndex**: index of other element.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+ 
+Example
+
+```swift
+[1, 2, 3, 4, 5].safeSwap(from: 3, to: 0) -> [4, 2, 3, 1, 5]
+["h", "e", "l", "l", "o"].safeSwap(from: 1, to: 0) -> ["e", "h", "l", "l", "o"]
+// It also works for all other types!
+```
+
+
+---
+
+
+## `swap(from index: Int, to otherIndex: Int)`
+Swap values at index positions. Doesn't check index range.
+
+ - **type**: Method.
+ - **parameters**:
+  - **index**: index of first element.
+  - **otherIndex**: index of other element.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+ 
+Example
+
+```swift
+[1, 2, 3, 4, 5].swap(from: 3, to: 0) -> [4, 2, 3, 1, 5]
+["h", "e", "l", "l", "o"].swap(from: 1, to: 0) -> ["e", "h", "l", "l", "o"]
+// It also works for all other types!
+```
+
+
+---
+
+
+## `firstIndex(where condition: (Element) -> Bool) -> Int?`
+Get first index where condition is met.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **returns**: first index where the specified condition evaluates to true. (optional)
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[1, 7, 1, 2, 4, 1, 6].firstIndex { $0 % 2 == 0 } -> 3
+// It also works for all other types!
+```
+
+
+---
+
+
+## `lastIndex(where condition: (Element) -> Bool) -> Int?`
+Get last index where condition is met.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **returns**: last index where the specified condition evaluates to true. (optional)
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[1, 7, 1, 2, 4, 1, 8].lastIndex { $0 % 2 == 0 } -> 6
+// It also works for all other types!
+```
+
+
+---
+
+
+## `indices(where condition: (Element) -> Bool) -> [Int]?`
+Get all indices where condition is met.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **returns**: all indices where the specified condition evaluates to true. (optional)
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[1, 7, 1, 2, 4, 1, 8].indices(where: { $0 == 1 }) -> [0, 2, 5]
+// It also works for all other types!
+```
+
+
+---
+
+
+## `all(matching condition: (Element) -> Bool) -> Bool?`
+Check if all elements in array match a conditon.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **returns**: true when all elements in the array match the specified condition.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[2, 2, 4].all(matching: {$0 % 2 == 0}) -> true
+[1,2, 2, 4].all(matching: {$0 % 2 == 0}) -> false
+// It also works for all other types!
+```
+
+---
+
+
+
+## `none(matching condition: (Element) -> Bool) -> Bool?`
+Check if no elements in array match a conditon.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **returns**: true when no elements in the array match the specified condition.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[2, 2, 4].none(matching: {$0 % 2 == 0}) -> false
+[1, 3, 5, 7].none(matching: {$0 % 2 == 0}) -> true
+// It also works for all other types!
+```
 
 ---
 
