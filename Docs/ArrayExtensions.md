@@ -18,13 +18,19 @@
 | [**`pop()`**](#pop) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`prepend(_ newElement: Element)`**](#prepend_-newelement-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`push(_ newElement: Element)`**](#push_-newelement-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`safeSwap(from index: Int, to otherIndex: Int)`**](#safeswapfrom-index-int-to-otherIndex-int) Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`swap(from index: Int, to otherIndex: Int)`**](#swapfrom-index-int-to-otherIndex-int) Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`firstIndex(where condition: (Element) -> Bool) -> Int?`**](#firstindexwhere-condition-element---bool---int) Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`lastIndex(where condition: (Element) -> Bool) -> Int?`**](#lastindexwhere-condition-element---bool---int) Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`indices(where condition: (Element) -> Bool) -> [Int]?`**](#indiceswhere-condition-element---bool---int) Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`all(matching condition: (Element) -> Bool) -> Bool?`**](#allmatching-condition-element---bool---bool) Method | 8+ | 9+ | 3+ | 10.10+ |
-| [**`none(matching condition: (Element) -> Bool) -> Bool?`**](#nonematching-condition-element---bool---bool) Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`safeSwap(from index: Int, to otherIndex: Int)`**](#safeswapfrom-index-int-to-otherIndex-int) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`swap(from index: Int, to otherIndex: Int)`**](#swapfrom-index-int-to-otherIndex-int) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`firstIndex(where condition: (Element) -> Bool) -> Int?`**](#firstindexwhere-condition-element---bool---int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`lastIndex(where condition: (Element) -> Bool) -> Int?`**](#lastindexwhere-condition-element---bool---int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`indices(where condition: (Element) -> Bool) -> [Int]?`**](#indiceswhere-condition-element---bool---int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`all(matching condition: (Element) -> Bool) -> Bool?`**](#allmatching-condition-element---bool---bool) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`none(matching condition: (Element) -> Bool) -> Bool?`**](#nonematching-condition-element---bool---bool) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`last(where condition: (Element) -> Bool) -> Element?`**](#lastwhere-condition-element---bool---element) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`reject(where condition: (Element) -> Bool) -> [Element]`**](#rejectwhere-condition-element---bool---element) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`count(where condition: (Element) -> Bool) -> Int`**](#countwhere-condition-element---bool---int) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`forEachReversed(_ body: (Element) -> Void)`**](#foreachreversed_-body-element---void) | Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`forEach(where condition: (Element) -> Bool, body: (Element) -> Void)`**](#foreachwhere-condition-element---bool-body-element---void) | Method | 8+ | 9+ | 3+ | 10.10+ |  
+| [**`removeAll(_ items: [Element])`**](#removeall_-items-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`removeAll(_ item: Element)`**](#removeall_-item-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`removeDuplicates()`**](#removeduplicates) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`shuffle()`**](#shuffle) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
@@ -444,6 +450,100 @@ Example
 ---
 
 
+## `last(where condition: (Element) -> Bool) -> Element?`
+Get last element that satisfies a conditon.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **returns**: the last element in the array matching the specified condition. (optional)
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[2, 2, 4, 7].last(where: {$0 % 2 == 0}) -> 4
+// It also works for all other types!
+```
+
+---
+
+
+## `reject(where condition: (Element) -> Bool) -> [Element]`
+Filter elements based on a rejection condition.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: to evaluate the exclusion of an element from the array.
+ - **returns**: the array with rejected values filtered from it.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[2, 2, 4, 7].reject(where: {$0 % 2 == 0}) -> [7]
+// It also works for all other types!
+```
+
+---
+
+
+## `count(where condition: (Element) -> Bool) -> Int`
+Get element count based on condition.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **returns**: number of times the condition evaluated to true.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[2, 2, 4, 7].count(where: {$0 % 2 == 0}) -> 3
+// It also works for all other types!
+```
+
+---
+
+
+## `forEachReversed(_ body: (Element) -> Void)` 
+Iterate over a collection in reverse order. (right to left)
+
+ - **type**: Method.
+ - **parameters**:
+  - **body**: a closure that takes an element of the array as a parameter.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[0, 2, 4, 7].forEachReversed({ print($0)}) -> //Order of print: 7,4,2,0
+// It also works for all other types!
+```
+
+---
+
+
+## `forEach(where condition: (Element) -> Bool, body: (Element) -> Void)`
+Calls given closure with each element where condition is true.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+  - **body**: a closure that takes an element of the array as a parameter.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[0, 2, 4, 7].forEach( where: {$0 % 2 == 0}, body: { print($0)}) -> //print: 0, 2, 4
+// It also works for all other types!
+```
+
+---
+
+
 ## `removeAll(_ item: Element)`
 Remove all instances of an item from array.
 
@@ -457,6 +557,26 @@ Example
 ```swift
 [1, 2, 2, 3, 4, 5].removeAll(2) -> [1, 3, 4, 5]
 ["h", "e", "l", "l", "o"].removeAll("l") -> ["h", "e", "o"]
+// It also works for all other types!
+```
+
+
+---
+
+
+## `removeAll(_ items: [Element])`
+Remove all instances contained in items parameter from array.
+
+ - **type**: Mutating Method.
+ - **parameters**:
+  - **items**: iitems to remove.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[1, 2, 2, 3, 4, 5].removeAll([2,5]) -> [1, 3, 4]
+["h", "e", "l", "l", "o"].removeAll(["l", "h"]) -> ["e", "o"]
 // It also works for all other types!
 ```
 
