@@ -30,9 +30,14 @@
 | [**`count(where condition: (Element) -> Bool) -> Int`**](#countwhere-condition-element---bool---int) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`forEachReversed(_ body: (Element) -> Void)`**](#foreachreversed_-body-element---void) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`forEach(where condition: (Element) -> Bool, body: (Element) -> Void)`**](#foreachwhere-condition-element---bool-body-element---void) | Method | 8+ | 9+ | 3+ | 10.10+ |  
+| [**`keep(while condition: (Element) -> Bool)`**](#keepwhile-condition-element---bool) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ | 
+| [**`drop(while condition: (Element) -> Bool)`**](#dropwhile-condition-element---bool) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ | 
+| [**`take(while condition: (Element) -> Bool) -> [Element]`**](#takewhile-condition-element---bool---element) | Method | 8+ | 9+ | 3+ | 10.10+ | 
+| [**`skip(while condition: (Element) -> Bool) -> [Element]`**](#takewhile-condition-element---bool---element) | Method | 8+ | 9+ | 3+ | 10.10+ | 
 | [**`removeAll(_ items: [Element])`**](#removeall_-items-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`removeAll(_ item: Element)`**](#removeall_-item-element) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`removeDuplicates()`**](#removeduplicates) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
+| [**`duplicatesRemoved() -> [Element]`**](#duplicatesremoved---element) | Method | 8+ | 9+ | 3+ | 10.10+ |
 | [**`shuffle()`**](#shuffle) | Mutating Method | 8+ | 9+ | 3+ | 10.10+ |
 
 
@@ -544,6 +549,80 @@ Example
 ---
 
 
+## `keep(while condition: (Element) -> Bool)` 
+Keep elements of Array while condition is true.
+
+ - **type**: Mutating Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[0, 2, 4, 7].keep( where: {$0 % 2 == 0}) -> [0, 2, 4]
+// It also works for all other types!
+```
+
+---
+
+
+## `drop(while condition: (Element) -> Bool)` 
+Drop elements of Array while condition is true.
+
+ - **type**: Mutating Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[0, 2, 4, 7].drop( where: {$0 % 2 == 0}) -> [7]
+// It also works for all other types!
+```
+
+---
+
+
+## `take(while condition: (Element) -> Bool) -> [Element]` 
+Take element of Array while condition is true.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **returns**: All elements up until condition evaluates to false.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[0, 2, 4, 7, 6, 8].take( where: {$0 % 2 == 0}) -> [0, 2, 4]
+// It also works for all other types!
+```
+
+---
+
+
+## `skip(while condition: (Element) -> Bool) -> [Element]` 
+Skip elements of Array while condition is true.
+
+ - **type**: Method.
+ - **parameters**:
+  - **condition**: condition to evaluate each element against.
+ - **returns**: All elements after the condition evaluates to false.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[0, 2, 4, 7, 6, 8].skip( where: {$0 % 2 == 0}) -> [6, 8]
+// It also works for all other types!
+```
+
+---
+
+
 ## `removeAll(_ item: Element)`
 Remove all instances of an item from array.
 
@@ -595,6 +674,24 @@ Example
 ```swift
 [1, 2, 2, 3, 4, 5].removeDuplicates() -> [1, 2, 3, 4, 5]
 ["h", "e", "l", "l", "o"]. removeDuplicates() -> ["h", "e", "l", "o"]
+// It also works for all other types!
+```
+
+
+---
+
+
+## `duplicatesRemoved() -> [Element]`
+Return array with all duplicate elements removed.
+
+ - **type**: Method.
+ - **availability**: `iOS 8+` `tvOS 9+` `watchOS 3+` `macOS 10.10+`.
+
+Example
+
+```swift
+[1, 2, 2, 3, 4, 5, 5].duplicatesRemoved() -> [ 2, 5]
+["h", "e", "l", "l", "o"]. duplicatesRemoved() -> ["l"]
 // It also works for all other types!
 ```
 
